@@ -1,0 +1,23 @@
+[
+  {
+    "image": "media/squidgame.jpg",
+    "logo": "media/squidgamelogo.png",
+    "id": "squidgame",
+    "name": "Squid Game (오징어 게임)",
+    "offset": "25%"
+  },
+  {
+    "image": "media/breaking-bad.jpg",
+    "logo": "media/breaking-bad-logo.png",
+    "id": "breakingbad",
+    "name": "Breaking Bad",
+    "offset": "0%"
+  },
+  {
+    "image": "media/ponyo.jpg",
+    "logo": "media/ponyologo.png",
+    "id": "ponyo",
+    "name": "Ponyo (崖の上のポニョ)",
+    "offset": "40%"
+  }
+]

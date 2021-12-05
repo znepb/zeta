@@ -1,0 +1,28 @@
+[
+  {
+    "image": "games/minecraft.jpg",
+    "id": "mc",
+    "name": "Minecraft",
+    "offset": "40%"
+  },
+  {
+    "image": "games/scrapmechanic.png",
+    "logo": "games/scrapmechanic-logo.png",
+    "id": "sm",
+    "name": "Scrap Mechanic",
+    "offset": "25%"
+  },
+  {
+    "image": "games/planetcoaster.jpg",
+    "logo": "games/planetcoaster-logo.png",
+    "id": "pc",
+    "name": "Planet Coaster",
+    "offset": "50%"
+  },
+  {
+    "image": "games/cs.jpg",
+    "id": "cs",
+    "name": "Citites: Skylines",
+    "offset": "10%"
+  }
+]

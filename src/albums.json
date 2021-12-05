@@ -1,0 +1,29 @@
+[
+  {
+    "image": "music/mmmm.jpg",
+    "id": "mmmm",
+    "name": "Marvin's Marvelous Mechanical Museum",
+    "artist": "Tally Hall"
+  },
+  {
+    "image": "music/dsotm.jpg",
+    "id": "dsotm",
+    "name": "Dark Side of the Moon",
+    "artist": "Pink Floyd",
+    "offset": "33%"
+  },
+  {
+    "image": "music/rush.jpg",
+    "id": "rush",
+    "name": "Rush",
+    "logo": "music/rushlogo.png",
+    "offset": "40%"
+  },
+  {
+    "image": "music/spritphone.jpg",
+    "id": "spritphone",
+    "name": "Sprit Phone",
+    "artist": "Lemon Demon",
+    "offset": "40%"
+  }
+]

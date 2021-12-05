@@ -1,0 +1,28 @@
+.header {
+  background-image: url("/home-background.svg");
+  width: 100%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+
+  @media only screen and (max-width: 768px) {
+    background-image: none;
+    justify-content: center;
+
+    & > article {
+      text-align: center;
+    }
+  }
+
+  & > img {
+    width: 40%;
+    max-width: 196px;
+  }
+
+  & > .down {
+    width: 64px;
+  }
+}
