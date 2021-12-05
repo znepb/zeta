@@ -11,7 +11,7 @@ export default function error404() {
       <div></div>
       <article>
         <h2>404</h2>
-        <div style={{marginBottom: "0.5rem"}}>Looks like we couldn't find this page. Bummer dude.</div>
+        <div style={{marginBottom: "0.5rem"}}>Looks like we couldn&apos;t find this page. Bummer dude.</div>
         <Link href="/">Take me home</Link>
       </article>
       <div></div>

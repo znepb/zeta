@@ -18,7 +18,7 @@ TimeAgo.addLocale(en);
 
 import { useEffect, useState } from 'react';
 
-export default function index() {
+export default function Index() {
   const timeAgo = new TimeAgo('en-US')
   const [age, setAge] = useState(14);
 
@@ -50,29 +50,29 @@ export default function index() {
       <h2>About Me</h2>
       <div className="headingDecoration"></div>
       <p
-        >Hi! I'm Marcus, known as znepb on the internet. I'm a{" "}
-        <a target="_blank" href="https://countdowns.znepb.me/1">{age}-year-old</a> percussionist, programmer and 
+        >Hi! I&apos;m Marcus, known as znepb on the internet. I&apos;m a{" "}
+        <a target="_blank" rel="noreferrer" href="https://countdowns.znepb.me/1">{age}-year-old</a> percussionist, programmer and 
         roller coaster enthusiant.
       </p>
 
       <p>
         I started programming when I was 7. I started off with programming in Lua, using a Minecraft programming mod 
-        called <a target="_blank" href="https://computercraft.info">ComputerCraft</a>. From there, I branched out to 
+        called <a target="_blank" rel="noreferrer" href="https://computercraft.info">ComputerCraft</a>. From there, I branched out to 
         many languages, starting with JavaScript, and eventually TypeScript, Java, and a few others.
       </p>
 
       <p>
-        I also love playing and writing music. I haven't written much, but I've competed in my school's marching band 
+        I also love playing and writing music. I haven&apos;t written much, but I&apos;ve competed in my school&apos;s marching band 
         and indoor percussion ensomble on vibraphone. I started playing music in 6th grade (on the trombone), but I 
-        switched to percussion in 9th grade, because I didn't really like playing trombone that much.
+        switched to percussion in 9th grade, because I didn&apos;t really like playing trombone that much.
       </p>
 
       <p>
         Finally, I am a huge roller coaster nerd. As of October 22nd, 2021, I have ridden 52 roller coasters, a total 
-        of 283 times. I've been to 5 amusment parks, and my home park is Kings Island. My favorite roller coaster is 
-        Steel Vengance at Cedar Point. <small>(Very original, I know.)</small> If you'd like to see all the coasters
-        I've ridden and their rankings (and plently of other statistics){" "}
-         <a href="https://docs.google.com/spreadsheets/d/1KGE_UN3Ftr-P13eenqGx-tMuOkPr7EM7e4hEA-Gmclk/edit?usp=sharing">check out my Google Spreadsheet.</a>
+        of 283 times. I&apos;ve been to 5 amusment parks, and my home park is Kings Island. My favorite roller coaster is 
+        Steel Vengance at Cedar Point. <small>(Very original, I know.)</small> If you&apos;d like to see all the coasters
+        I&apos;ve ridden and their rankings (and plently of other statistics){" "}
+         <a rel="noreferrer" target="_blank" href="https://docs.google.com/spreadsheets/d/1KGE_UN3Ftr-P13eenqGx-tMuOkPr7EM7e4hEA-Gmclk/edit?usp=sharing">check out my Google Spreadsheet.</a>
       </p>
     </section>
     <section className="primary" id="likings">
@@ -120,7 +120,7 @@ export default function index() {
             </div>
             <footer>
               <a href="https://countdowns.znepb.me"><Globe size="28px" /></a>
-              <a href="https://github.com/znepb/countdowns" target="_blank"><GitHub size="28px" /></a>
+              <a href="https://github.com/znepb/countdowns" rel="noreferrer" target="_blank"><GitHub size="28px" /></a>
             </footer>
           </article>
         </div>
@@ -129,7 +129,7 @@ export default function index() {
           <article>
             <div>
               <header>LIT</header>
-              <article>It's totally LIT, son! LIT is a chat app &amp; social media platform I've been working on with <a target="_blank" href="https://auti.one">AutiOne</a>.</article>
+              <article>It&apos;s totally LIT, son! LIT is a chat app &amp; social media platform I&apos;ve been working on with <a rel="noreferrer" target="_blank" href="https://auti.one">AutiOne</a>.</article>
             </div>
             <footer>
               <a href="https://litsocial.app"><Globe size="28px" /></a>
@@ -145,7 +145,7 @@ export default function index() {
             </div>
             <footer>
               <a href="https://files.znepb.me"><Globe size="28px" /></a>
-              <a href="https://github.com/znepb/filemanager" target="_blank"><GitHub size="28px" /></a>
+              <a href="https://github.com/znepb/filemanager" rel="noreferrer" target="_blank"><GitHub size="28px" /></a>
             </footer>
           </article>
         </div>
@@ -154,7 +154,7 @@ export default function index() {
           <article>
             <div>
               <header>znepb.me v6</header>
-              <article>The 6th version of my website, made in NextJS. Why can't I just settle on one website? Good lord.</article>
+              <article>The 6th version of my website, made in NextJS. Why can&apos;t I just settle on one website? Good lord.</article>
             </div>
           </article>
         </div>
@@ -163,11 +163,11 @@ export default function index() {
           <article>
             <div>
               <header>photos.znepb.me</header>
-              <article>A open-soruce photos website. That's about it.</article>
+              <article>A open-soruce photos website. That&apos;s about it.</article>
             </div>
             <footer>
               <a href="https://photos.znepb.me"><Globe size="28px" /></a>
-              <a href="https://github.com/znepb/photos-site" target="_blank"><GitHub size="28px" /></a>
+              <a href="https://github.com/znepb/photos-site" rel="noreferrer" target="_blank"><GitHub size="28px" /></a>
             </footer>
           </article>
         </div>
@@ -178,13 +178,13 @@ export default function index() {
       <div className="headingDecoration"></div>
 
       <div className={styles.contact}>
-        <a href="https://www.instagram.com/mwenzel.percussion/" target="_blank" className="nostyle">
+        <a href="https://www.instagram.com/mwenzel.percussion/" rel="noreferrer" target="_blank" className="nostyle">
           <Instagram size="32px" /> <span>@mwenzel.percussion</span>
         </a>
-        <a href="https://twitter.com/im_znepb" target="_blank" className="nostyle">
+        <a href="https://twitter.com/im_znepb" rel="noreferrer" target="_blank" className="nostyle">
           <Twitter size="32px" /> <span>@im_znepb</span>
         </a>
-        <a href="https://github.com/znepb" target="_blank" className="nostyle">
+        <a href="https://github.com/znepb" rel="noreferrer" target="_blank" className="nostyle">
           <GitHub size="32px" /> <span>znepb</span>
         </a>
         <span>

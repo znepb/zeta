@@ -1,15 +1,16 @@
 import styles from "../styles/Footer.module.scss";
+import Link from 'next/link'
 
 export default function Footer() {
   return <div className={styles.footer}>
     <span>
-      <a href="/">
+      <Link href="/">
         Home
-      </a>
+      </Link>
       <span>•</span>
-      <a href="#projects">
+      <Link href="#projects">
         Projects
-      </a>
+      </Link>
       <span>•</span>
       <a href="https://photos.znepb.me">
         Photos
