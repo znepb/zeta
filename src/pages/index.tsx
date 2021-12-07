@@ -7,9 +7,9 @@ import Footer from "../components/Footer";
 
 import { Instagram, Twitter, GitHub, Globe } from 'react-feather';
 
-import albums from "../albums.json";
-import games from "../games.json";
-import media from "../media.json";
+import albums from "../json/albums.json";
+import games from "../json/games.json";
+import media from "../json/media.json";
 
 import Head from 'next/head';
 import Link from 'next/link';

@@ -29,7 +29,13 @@ export default function Footer() {
       </a>
     </span>
     <footer>
-      <span>v6</span>
+      <span>
+        <Link href="/changes">
+          <span style={{color: "white !important"}}>
+            v6.1
+          </span>
+        </Link>
+      </span>
       <span>Copyright ©️ znepb 2021</span>
       <img src="/logo.svg" />
     </footer>
