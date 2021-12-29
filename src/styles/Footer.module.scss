@@ -3,6 +3,7 @@
   background-color: rgba(0, 0, 0, 50);
   display: flex;
   justify-content: space-between;
+  margin-top: auto;
 
   & > span {
     display: grid;
@@ -11,11 +12,16 @@
     grid-template-areas: ". . . . . . . . . . .";
 
     @media only screen and (max-width: 1100px) {
-      grid-template-areas: '.' '.' '.' '.' '.' '.';
+      grid-template-areas: "." "." "." "." "." ".";
     }
 
     & > a {
       color: white;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
 
     & > span {
