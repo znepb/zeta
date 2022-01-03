@@ -153,3 +153,33 @@ p {
   margin-top: 0;
   padding-top: 0;
 }
+
+.noscript {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 2rem;
+
+  @media screen and (max-width: 768px) {
+    padding: 1rem;
+  }
+
+  & > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    padding: 0.7rem;
+    max-width: 43rem;
+    width: auto;
+    background-color: #fb7272;
+    border-radius: 0.5rem;
+
+    & > i {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

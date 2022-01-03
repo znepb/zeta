@@ -24,6 +24,13 @@ export default function Index() {
         <div></div>
       </section>
       <section className="primary-bottom" id="changes">
+        <h2>6.4</h2>
+        <div className="headingDecoration"></div>
+        <h3>Jan 3 2022 ({timeAgo.format(new Date("Jan 3 2022 17:25:00"))})</h3>
+        <ul>
+          <li>Added noscript message</li>
+        </ul>
+
         <h2>6.3</h2>
         <div className="headingDecoration"></div>
         <h3>Jan 3 2022 ({timeAgo.format(new Date("Jan 3 2022 14:50:00"))})</h3>
@@ -47,7 +54,6 @@ export default function Index() {
         <ul>
           <li>Better CSS</li>
           <li>Uniform CSS across znepb.me (just lens as of writing)</li>
-          <li>Likings cards will now link to their respective websites</li>
           <li>Snow</li>
           <li>Special effects for my birthday</li>
         </ul>

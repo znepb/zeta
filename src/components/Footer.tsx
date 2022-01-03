@@ -28,7 +28,7 @@ export default function Footer() {
       <footer>
         <span>
           <Link href="/changes">
-            <a className="nostyle">v6.3</a>
+            <a className="nostyle">v6.4</a>
           </Link>
         </span>
         <span>Copyright ©️ znepb 2022</span>
