@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps }: AppProps) {
             </i>
             <span>
               Some features on znepb.me require JavaScript to function properly.
-              If you would like to use some of these features, please disable
+              If you would like to use some of these features, please enable
               JavaScript in your browser.
             </span>
           </div>
