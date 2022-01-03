@@ -16,7 +16,6 @@ import Link from "next/link";
 
 import Confetti from "../components/Confetti";
 import Snow from "../Snow";
-import zmeBirthday from "../zmeBirthday";
 import Birthday from "../Birthday";
 
 TimeAgo.addLocale(en);
@@ -60,11 +59,13 @@ export default function Index() {
     } else if (month < 3) {
       setConfetti(new Snow([]));
     }
+  }, []);
 
-    if (confetti) {
+  useEffect(() => {
+    if (confetti != undefined) {
       confetti.startAnimation();
     }
-  }, []);
+  }, [confetti]);
 
   return (
     <>
@@ -154,13 +155,6 @@ export default function Index() {
                 <Card key={data.id} {...data} />
               ))}
             </div>
-
-            <Link href="/spotify-wrapped-21">
-              <a className={styles.spotifyWrappedLink}>
-                <img src="/png/spotify.png" width={32} />
-                Spotify Wrapped 2021
-              </a>
-            </Link>
           </div>
           <div>
             <h3>Games</h3>
@@ -322,6 +316,10 @@ export default function Index() {
             rel="noreferrer"
             target="_blank"
             className="nostyle"
+            style={{
+              background:
+                "linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%)",
+            }}
           >
             <Instagram size="32px" /> <span>@mwenzel.percussion</span>
           </a>
@@ -330,6 +328,9 @@ export default function Index() {
             rel="noreferrer"
             target="_blank"
             className="nostyle"
+            style={{
+              background: "#1c9aef",
+            }}
           >
             <Twitter size="32px" /> <span>@im_znepb</span>
           </a>
@@ -338,10 +339,17 @@ export default function Index() {
             rel="noreferrer"
             target="_blank"
             className="nostyle"
+            style={{
+              background: "#24292e",
+            }}
           >
             <GitHub size="32px" /> <span>znepb</span>
           </a>
-          <span>
+          <span
+            style={{
+              background: "#5662f6",
+            }}
+          >
             <img src="/svg/discord.svg" width="32px" /> <span>znepb#0123</span>
           </span>
         </div>

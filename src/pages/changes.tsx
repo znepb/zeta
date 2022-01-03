@@ -5,6 +5,7 @@ import en from "javascript-time-ago/locale/en.json";
 import Footer from "../components/Footer";
 
 import Head from "next/head";
+import Link from "next/link";
 
 TimeAgo.addLocale(en);
 
@@ -23,9 +24,26 @@ export default function Index() {
         <div></div>
       </section>
       <section className="primary-bottom" id="changes">
+        <h2>6.3</h2>
+        <div className="headingDecoration"></div>
+        <h3>Jan 3 2022 ({timeAgo.format(new Date("Jan 3 2022 14:50:00"))})</h3>
+        <ul>
+          <li>🎉Happy New Year!</li>
+          <li>
+            Archived{" "}
+            <Link href="/archive/spotify-wrapped/21">
+              <a>Spotify Wrapped</a>
+            </Link>
+          </li>
+          <li>New fancy backgrounds for socials</li>
+          <li>Snow actually works now</li>
+        </ul>
+
         <h2>6.2</h2>
         <div className="headingDecoration"></div>
-        <h3>Dec 7 2021 ({timeAgo.format(new Date("Dec 28 2021 19:00:00"))})</h3>
+        <h3>
+          Dec 28 2021 ({timeAgo.format(new Date("Dec 28 2021 19:00:00"))})
+        </h3>
         <ul>
           <li>Better CSS</li>
           <li>Uniform CSS across znepb.me (just lens as of writing)</li>

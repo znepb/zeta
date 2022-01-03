@@ -1,10 +1,10 @@
-import Card from "../components/Card";
-import Footer from "../components/Footer";
+import Card from "../../components/Card";
+import Footer from "../../components/Footer";
 import Head from "next/head";
 
-import styles from "../styles/SpotifyWrapped.module.scss";
+import styles from "../../styles/SpotifyWrapped.module.scss";
 
-import wrapped from "../json/SpotifyWrapped.json";
+import wrapped from "../../json/SpotifyWrapped2021.json";
 
 import { useState } from "react";
 
