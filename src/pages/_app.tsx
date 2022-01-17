@@ -1,11 +1,13 @@
 import "../styles/globals.scss";
+import "../styles/zeta.scss";
 import type { AppProps } from "next/app";
+import { ThemeProvider } from "next-themes";
 
 import { AlertCircle } from "react-feather";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <>
+    <ThemeProvider themes={["dark", "light", "verydark"]} defaultTheme="dark">
       <noscript>
         <div className="noscript">
           <div>
@@ -21,7 +23,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         </div>
       </noscript>
       <Component {...pageProps} />
-    </>
+    </ThemeProvider>
   );
 }
 

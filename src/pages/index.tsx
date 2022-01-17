@@ -5,14 +5,41 @@ import en from "javascript-time-ago/locale/en.json";
 import Card from "../components/Card";
 import Footer from "../components/Footer";
 
-import { Instagram, Twitter, GitHub, Globe } from "react-feather";
+import {
+  Instagram,
+  Twitter,
+  GitHub,
+  Globe,
+  ExternalLink,
+  Figma,
+} from "react-feather";
+
+import {
+  Cplusplus,
+  Csharp,
+  CssThree,
+  Express,
+  Html5,
+  Java,
+  Javascript,
+  Lua,
+  Musescore,
+  Nextdotjs,
+  Nodedotjs,
+  Php,
+  Prisma,
+  Python,
+  ReactJs,
+  Roblox,
+  Sass,
+  Typescript,
+} from "@icons-pack/react-simple-icons";
 
 import albums from "../json/albums.json";
 import games from "../json/games.json";
 import media from "../json/media.json";
 
 import Head from "next/head";
-import Link from "next/link";
 
 import Confetti from "../components/Confetti";
 import Snow from "../Snow";
@@ -62,7 +89,12 @@ export default function Index() {
   }, []);
 
   useEffect(() => {
-    if (confetti != undefined) {
+    if (
+      confetti != undefined &&
+      localStorage.getItem("reduced_motion") == "false"
+    ) {
+      confetti.pauseAnimation();
+    } else if (confetti != undefined) {
       confetti.startAnimation();
     }
   }, [confetti]);
@@ -183,7 +215,9 @@ export default function Index() {
             <img width="300px" src="/projects/countdowns.png" />
             <article>
               <div>
-                <header>Countdowns</header>
+                <header>
+                  Countdowns <small>October 2021</small>
+                </header>
                 <article>
                   A glorified clock with some countdowns to some important dates
                   for me.
@@ -207,7 +241,9 @@ export default function Index() {
             <img width="300px" src="/projects/lens.png" />
             <article>
               <div>
-                <header>Lens</header>
+                <header>
+                  Lens <small>December 2021</small>
+                </header>
                 <article>
                   Lens is a website to show off some pictures I&apos;ve taken,
                   designed very similar to znepb.me.
@@ -217,6 +253,13 @@ export default function Index() {
                 <a href="https://lens.znepb.me">
                   <Globe size="28px" />
                 </a>
+                <a
+                  href="https://github.com/znepb/lens"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  <GitHub size="28px" />
+                </a>
               </footer>
             </article>
           </div>
@@ -224,7 +267,9 @@ export default function Index() {
             <img width="300px" src="/projects/lit.png" />
             <article>
               <div>
-                <header>LIT</header>
+                <header>
+                  LIT <small>In Development</small>
+                </header>
                 <article>
                   It&apos;s totally LIT, son! LIT is a chat app &amp; social
                   media platform I&apos;ve been working on with{" "}
@@ -245,7 +290,9 @@ export default function Index() {
             <img width="300px" src="/projects/files.png" />
             <article>
               <div>
-                <header>files.znepb.me</header>
+                <header>
+                  files.znepb.me <small>September 2021</small>
+                </header>
                 <article>An incredibly minimalistic file dump.</article>
               </div>
               <footer>
@@ -266,7 +313,9 @@ export default function Index() {
             <img width="300px" src="/projects/zme6.png" />
             <article>
               <div>
-                <header>znepb.me v6</header>
+                <header>
+                  znepb.me v6 <small>December 2021</small>
+                </header>
                 <article>
                   The 6th version of my website, made in NextJS. Why can&apos;t
                   I just settle on one website? Good lord.
@@ -287,7 +336,9 @@ export default function Index() {
             <img width="300px" src="/projects/photos-site.png" />
             <article>
               <div>
-                <header>Photos</header>
+                <header>
+                  Photos <small>March 2021</small>
+                </header>
                 <article>
                   A open-soruce photos website I&apos;ve since replaced (at
                   least on znepb.me) with Lens.
@@ -306,7 +357,7 @@ export default function Index() {
           </div>
         </div>
       </section>
-      <section className="primary-bottom" id="Connect">
+      <section className="primary" id="connect">
         <h2>Connect</h2>
         <div className="headingDecoration"></div>
 
@@ -345,13 +396,252 @@ export default function Index() {
           >
             <GitHub size="32px" /> <span>znepb</span>
           </a>
-          <span
+          <a
+            href="https://discord.com/users/356209633313947648"
+            rel="noreferrer"
+            target="_blank"
+            className="nostyle"
             style={{
               background: "#5662f6",
             }}
           >
-            <img src="/svg/discord.svg" width="32px" /> <span>znepb#0123</span>
-          </span>
+            <img src="/svg/discord.svg" width="32px" />{" "}
+            <span>! read status (znepb)#0123</span>
+          </a>
+        </div>
+      </section>
+      <section className="primary-bottom" id="more">
+        <h2>More</h2>
+        <div className="headingDecoration"></div>
+        <div className={styles.more}>
+          <section>
+            <h3>Links</h3>
+            <div className={styles.links}>
+              <div>
+                <main>
+                  <header>AutiOne</header>
+                  <footer>
+                    Another programming nerd who helped me design this site.
+                  </footer>
+                </main>
+                <a href="https://auti.one" target="_blank" rel="noreferrer">
+                  <ExternalLink />
+                </a>
+              </div>
+              <div>
+                <main>
+                  <header>znepb/zeta</header>
+                  <footer>The source for znepb.me.</footer>
+                </main>
+                <a
+                  href="https://github.com/znepb/zeta"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <ExternalLink />
+                </a>
+              </div>
+              <div>
+                <main>
+                  <header>Coasters Spreadsheet</header>
+                  <footer>
+                    A record of every coaster I&apos;ve ridden, park I&apos;ve
+                    visited, and data on every coaster and amusment park visits.
+                    Rennovation coming Soon™
+                  </footer>
+                </main>
+                <a
+                  href="https://docs.google.com/spreadsheets/d/1KGE_UN3Ftr-P13eenqGx-tMuOkPr7EM7e4hEA-Gmclk/edit#gid=2055894933"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <ExternalLink />
+                </a>
+              </div>
+              <div>
+                <main>
+                  <header>Numbers Survey</header>
+                  <footer>
+                    Data of a survey I&apos;m currently conducting via Discord.
+                    This survey will end mid-February 2022. If you&apos;d like
+                    to participate, DM me on Discord with an integer from 1-10.
+                  </footer>
+                </main>
+                <a
+                  href="https://docs.google.com/spreadsheets/d/1VS-QbNVb4mq59j1bybDmQSWMO53cV1nuiiiuMBZmoZY/edit?usp=sharing"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <ExternalLink />
+                </a>
+              </div>
+              <div>
+                <main>
+                  <header>My Spotify playlist</header>
+                  <footer>
+                    It&apos;s called &quot;bad taste&quot; because I&apos;ve
+                    been told I have bad taste. Anyway, enjoy my wacky
+                    collection of favorite songs.
+                  </footer>
+                </main>
+                <a
+                  href="https://open.spotify.com/playlist/2coydXv9V3Aj2RtQfTRosX?si=6ac681fafe324990"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <ExternalLink />
+                </a>
+              </div>
+              {/*to be added - <div>
+                <main>
+                  <header>v5.znepb.me</header>
+                  <footer>An old version of znepb.me. I&apos;d like to add even older versions, but unfortunetly, I don&apos;t have backups of those.</footer>
+                </main>
+                <a href="https://v5.znepb.me" target="_blank" rel="noreferrer">
+                  <ExternalLink />
+                </a>
+              </div>*/}
+              <div>
+                <main>
+                  <header>timeline.znepb.me</header>
+                  <footer>The timeline of znepb.me (and just znepb)</footer>
+                </main>
+                <a
+                  href="https://timeline.znepb.me"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <ExternalLink />
+                </a>
+              </div>
+              <div>
+                <main>
+                  <header>analytics.znepb.me</header>
+                  <footer>Analytics of my servers and computer.</footer>
+                </main>
+                <a
+                  href="https://timeline.znepb.me"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <ExternalLink />
+                </a>
+              </div>
+              <div>
+                <main>
+                  <header>Buy me a coffee</header>
+                  <footer>
+                    Feeling generous and like what I&apos;m making? Consider
+                    supporting server costs via Buy Me a Coffee. Donations are
+                    greatly appreciated!
+                  </footer>
+                </main>
+                <a
+                  href="https://www.buymeacoffee.com/znepb"
+                  target="_blank"
+                  rel="noreferrer"
+                  className={styles.coffee}
+                ></a>
+              </div>
+            </div>
+          </section>
+          <section className={styles.skillsWrapper}>
+            <h3>Skills</h3>
+            <table className={styles.skills}>
+              <thead>
+                <tr>
+                  <th>Experience Level</th>
+                  <th>Front-end</th>
+                  <th>Back-end</th>
+                  <th>General Purpose</th>
+                  <th>Scripting</th>
+                  <th>Frameworks</th>
+                  <th>Other Skills</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>Expert</th>
+                  <td>
+                    <Html5 color="var(--text)" size={24} />
+                  </td>
+                  <td>
+                    <Nodedotjs color="var(--text)" size={24} />
+                  </td>
+                  <td>
+                    <Javascript color="var(--text)" size={24} />
+                  </td>
+                  <td>
+                    <Lua color="var(--text)" size={24} />
+                  </td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th>Good</th>
+                  <td>
+                    <CssThree color="var(--text)" size={24} />
+                    <Nextdotjs color="var(--text)" size={24} />
+                    <Sass color="var(--text)" size={24} />
+                  </td>
+                  <td>
+                    <Php color="var(--text)" size={24} />
+                  </td>
+                  <td>
+                    <Typescript color="var(--text)" size={24} />
+                  </td>
+                  <td></td>
+                  <td>
+                    <Express color="var(--text)" size={24} />
+                  </td>
+                  <td>
+                    <Roblox color="var(--text)" size={24} />
+                    <Prisma color="var(--text)" size={24} />
+                    <Figma color="var(--text)" size={24} />
+                  </td>
+                </tr>
+                <tr>
+                  <th>Acceptable</th>
+                  <td>
+                    <ReactJs color="var(--text)" size={24} />
+                  </td>
+                  <td></td>
+                  <td>
+                    <Java color="var(--text)" size={24} />
+                  </td>
+                  <td>
+                    <Python color="var(--text)" size={24} />
+                  </td>
+                  <td></td>
+                  <td>
+                    <Musescore color="var(--text)" size={24} />
+                  </td>
+                </tr>
+                <tr>
+                  <th>Decent</th>
+                  <td></td>
+                  <td></td>
+                  <td>
+                    <Cplusplus color="var(--text)" size={24} />
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th>Poor</th>
+                  <td></td>
+                  <td></td>
+                  <td>
+                    <Csharp color="var(--text)" size={24} />
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
         </div>
       </section>
       <Footer />

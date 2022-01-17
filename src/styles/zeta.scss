@@ -1,0 +1,45 @@
+select.zeta-select {
+  padding-right: 2rem;
+
+  width: auto;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  background: var(--background);
+  color: var(--text);
+  border: solid #343434 2px;
+  border-radius: 0.5rem;
+
+  &:focus {
+    outline: none;
+    border-color: #0066ff;
+  }
+}
+
+button.zeta-button {
+  width: auto;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  background: #000d17;
+  color: white;
+  border: solid #343434 2px;
+  border-radius: 0.5rem;
+
+  transition: border 0.2s;
+
+  &:hover {
+    outline: none;
+    border-width: 2px;
+    border-color: #0066ff;
+  }
+}
+
+button.zeta-button-primary {
+  background: #343434;
+  border: solid #0066ff 2px;
+  transition: 0.2s background-color;
+
+  &:hover {
+    outline: none;
+    background: #0066ff;
+  }
+}

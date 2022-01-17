@@ -3,6 +3,34 @@
 
 :root {
   --zea-green: #1be253;
+
+  --background: #000d17;
+  --text: #fff;
+  --lighterBackground: rgba(255, 255, 255, 0.02);
+  --mediumBackground: rgba(255, 255, 255, 0.5);
+  --tableBackground: #0f1f2c;
+  --headingDecoration: #fff;
+  --footer: rgba(0, 0, 0, 50);
+}
+
+[data-theme="light"] {
+  --background: #fff;
+  --text: #000;
+  --lighterBackground: rgba(0, 0, 0, 0.02);
+  --mediumBackground: rgba(0, 0, 0, 0.5);
+  --tableBackground: rgb(240, 240, 240);
+  --headingDecoration: rgba(0, 0, 0, 0.5);
+  --footer: rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="verydark"] {
+  --background: #000;
+  --text: #fff;
+  --lighterBackground: rgba(255, 255, 255, 0.02);
+  --mediumBackground: rgba(255, 255, 255, 0.5);
+  --tableBackground: #111;
+  --headingDecoration: #fff;
+  --footer: rgba(255, 255, 255, 0.05);
 }
 
 ::-webkit-scrollbar {
@@ -10,13 +38,13 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #000d17;
+  background: var(--background);
 }
 
 ::-webkit-scrollbar-thumb {
   background: #888;
   border-radius: 10px;
-  border: 3px solid #000d17;
+  border: 3px solid var(--background);
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -27,10 +55,10 @@ html,
 body {
   padding: 0;
   margin: 0;
-  background: #000d17;
+  background: var(--background);
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  color: white;
+  color: var(--text);
   font-size: 1.2rem;
   scroll-behavior: smooth;
   font-family: "Roboto Condensed", sans-serif;
@@ -44,6 +72,7 @@ body {
   align-items: center;
   gap: 1rem;
   border-radius: 0.5rem;
+  color: white;
 
   & > img {
     width: 72px;
@@ -137,7 +166,7 @@ h3 {
 .headingDecoration {
   width: 4.5rem;
   height: 0.4rem;
-  background-color: #fff;
+  background-color: var(--headingDecoration);
   margin-bottom: 0.5rem;
 }
 

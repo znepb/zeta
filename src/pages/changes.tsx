@@ -24,6 +24,19 @@ export default function Index() {
         <div></div>
       </section>
       <section className="primary-bottom" id="changes">
+        <h2>6.5</h2>
+        <div className="headingDecoration"></div>
+        <h3>
+          Jan 17 2022 ({timeAgo.format(new Date("Jan 17 2022 14:17:00"))})
+        </h3>
+        <ul>
+          <li>Added Skills and Links section</li>
+          <li>Added settings</li>
+          <li>Added themes</li>
+          <li>Link to my Discord profile on Contact section</li>
+          <li>Projects now have dates</li>
+        </ul>
+
         <h2>6.4</h2>
         <div className="headingDecoration"></div>
         <h3>Jan 3 2022 ({timeAgo.format(new Date("Jan 3 2022 17:25:00"))})</h3>
