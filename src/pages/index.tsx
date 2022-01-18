@@ -15,6 +15,7 @@ import {
 } from "react-feather";
 
 import {
+  Autodesk,
   Cplusplus,
   Csharp,
   CssThree,
@@ -411,11 +412,10 @@ export default function Index() {
         </div>
       </section>
       <section className="primary-bottom" id="more">
-        <h2>More</h2>
-        <div className="headingDecoration"></div>
         <div className={styles.more}>
           <section>
-            <h3>Links</h3>
+            <h2>Links</h2>
+            <div className="headingDecoration"></div>
             <div className={styles.links}>
               <div>
                 <main>
@@ -546,7 +546,8 @@ export default function Index() {
             </div>
           </section>
           <section className={styles.skillsWrapper}>
-            <h3>Skills</h3>
+            <h2>Skills</h2>
+            <div className="headingDecoration"></div>
             <table className={styles.skills}>
               <thead>
                 <tr>
@@ -578,7 +579,7 @@ export default function Index() {
                   <td></td>
                 </tr>
                 <tr>
-                  <th>Good</th>
+                  <th>Great</th>
                   <td>
                     <CssThree color="var(--text)" size={24} />
                     <Nextdotjs color="var(--text)" size={24} />
@@ -601,7 +602,7 @@ export default function Index() {
                   </td>
                 </tr>
                 <tr>
-                  <th>Acceptable</th>
+                  <th>Good</th>
                   <td>
                     <ReactJs color="var(--text)" size={24} />
                   </td>
@@ -618,7 +619,7 @@ export default function Index() {
                   </td>
                 </tr>
                 <tr>
-                  <th>Decent</th>
+                  <th>Capable</th>
                   <td></td>
                   <td></td>
                   <td>
@@ -626,7 +627,11 @@ export default function Index() {
                   </td>
                   <td></td>
                   <td></td>
-                  <td></td>
+                  <td>
+                    <i title="AutoDesk Fusion 360">
+                      <Autodesk color="var(--text)" size={24} />
+                    </i>
+                  </td>
                 </tr>
                 <tr>
                   <th>Poor</th>
