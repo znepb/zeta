@@ -27,6 +27,15 @@ export default function Index() {
         <div></div>
       </section>
       <section className="primary-bottom" id="changes">
+        <h2>6.5.2</h2>
+        <div className="headingDecoration"></div>
+        <h3>
+          Jan 18 2022 ({timeAgo.format(new Date("Jan 18 2022 15:04:00"))})
+        </h3>
+        <ul>
+          <li>Fixed Spotify Wrapped archive link</li>
+        </ul>
+
         <h2>6.5.1</h2>
         <div className="headingDecoration"></div>
         <h3>
@@ -61,10 +70,10 @@ export default function Index() {
         <div className="headingDecoration"></div>
         <h3>Jan 3 2022 ({timeAgo.format(new Date("Jan 3 2022 14:50:00"))})</h3>
         <ul>
-          <li>🎉Happy New Year!</li>
+          <li>🎉 Happy New Year!</li>
           <li>
             Archived{" "}
-            <Link href="/archive/spotify-wrapped/21">
+            <Link href="/archive/spotify-wrapped-21">
               <a>Spotify Wrapped</a>
             </Link>
           </li>
