@@ -421,7 +421,11 @@ export default function Index() {
                 <main>
                   <header>AutiOne</header>
                   <footer>
-                    Another programming nerd who helped me design this site.
+                    Another programming nerd{" "}
+                    <span title="He insisted I put this here.">
+                      (and design nerd)
+                    </span>{" "}
+                    who helped me design this site.
                   </footer>
                 </main>
                 <a href="https://auti.one" target="_blank" rel="noreferrer">
