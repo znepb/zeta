@@ -134,11 +134,18 @@ export default function Footer() {
           </span>
           <span>
             <Link href="/changes">
-              <a className="nostyle">v6.5.3</a>
+              <a className="nostyle">v6.5.4</a>
             </Link>
           </span>
           <span>Copyright ©️ znepb 2022</span>
-          <img src="/svg/logo.svg" height={25} />
+          <img
+            src={
+              theme && theme.includes("dark")
+                ? "/svg/wordmark-light.svg"
+                : "/svg/wordmark-dark.svg"
+            }
+            height={24}
+          />
         </footer>
       </div>
     </>

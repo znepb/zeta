@@ -27,6 +27,15 @@ export default function Index() {
         <div></div>
       </section>
       <section className="primary-bottom" id="changes">
+        <h2>6.5.4</h2>
+        <div className="headingDecoration"></div>
+        <h3>
+          Jan 21 2022 ({timeAgo.format(new Date("Jan 21 2022 16:21:00"))})
+        </h3>
+        <ul>
+          <li>Logo in footer will now change depending on theme</li>
+        </ul>
+
         <h2>6.5.3</h2>
         <div className="headingDecoration"></div>
         <h3>
