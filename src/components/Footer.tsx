@@ -1,3 +1,5 @@
+import changelog from "../json/changelog.json";
+
 import styles from "../styles/Footer.module.scss";
 import Link from "next/link";
 
@@ -5,6 +7,8 @@ import { Settings } from "react-feather";
 
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
+
+import { Patch } from "../types";
 
 export default function Footer() {
   const [settingsVisible, setSettingsVisible] = useState(false);
@@ -14,6 +18,8 @@ export default function Footer() {
   const [animate, setAnimate] = useState<boolean>(true);
 
   const { theme, setTheme } = useTheme();
+
+  const latestVersion: Patch = changelog[0];
 
   useEffect(() => {
     if (settingsVisible === true) {
@@ -134,10 +140,20 @@ export default function Footer() {
           </span>
           <span>
             <Link href="/changes">
-              <a className="nostyle">v6.5.4</a>
+              <a className="nostyle">
+                v
+                {latestVersion.version.map((n: number, i: number) => {
+                  if (i == latestVersion.version.length - 1) {
+                    return <span key={i}>{n}</span>;
+                  } else {
+                    return <span key={i}>{n}.</span>;
+                  }
+                })}
+                {latestVersion.suffix}
+              </a>
             </Link>
           </span>
-          <span>Copyright ©️ znepb 2022</span>
+          <span>Copyright ©️ znepb {new Date().getFullYear()}</span>
           <img
             src={
               theme && theme.includes("dark")

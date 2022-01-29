@@ -2,23 +2,19 @@ import styles from "../styles/Home.module.scss";
 import TimeAgo from "javascript-time-ago";
 import en from "javascript-time-ago/locale/en.json";
 
+import Image from "next/image";
+
 import Card from "../components/Card";
 import Footer from "../components/Footer";
 
-import {
-  Instagram,
-  Twitter,
-  GitHub,
-  Globe,
-  ExternalLink,
-  Figma,
-} from "react-feather";
+import * as Feather from "react-feather";
 
 import {
   Autodesk,
   Cplusplus,
   Csharp,
   CssThree,
+  Discord,
   Express,
   Html5,
   Java,
@@ -39,6 +35,8 @@ import {
 import albums from "../json/albums.json";
 import games from "../json/games.json";
 import media from "../json/media.json";
+import links from "../json/links.json";
+import projects from "../json/projects.json";
 
 import Head from "next/head";
 
@@ -49,6 +47,8 @@ import Birthday from "../Birthday";
 TimeAgo.addLocale(en);
 
 import { useEffect, useState } from "react";
+
+import { Link, Project, ProjectSite } from "../types";
 
 export default function Index() {
   const timeAgo = new TimeAgo("en-US");
@@ -72,8 +72,6 @@ export default function Index() {
 
     const month = now.getMonth() + 1;
     const date = now.getDate();
-
-    console.log(month, date);
 
     if (month == 12 || month == 3) {
       if (month == 3 && date == 6) {
@@ -212,150 +210,43 @@ export default function Index() {
         <div className="headingDecoration"></div>
 
         <div className={styles.projects}>
-          <div>
-            <img width="300px" src="/projects/countdowns.png" />
-            <article>
-              <div>
-                <header>
-                  Countdowns <small>October 2021</small>
-                </header>
-                <article>
-                  A glorified clock with some countdowns to some important dates
-                  for me.
-                </article>
-              </div>
-              <footer>
-                <a href="https://countdowns.znepb.me">
-                  <Globe size="28px" />
-                </a>
-                <a
-                  href="https://github.com/znepb/countdowns"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  <GitHub size="28px" />
-                </a>
-              </footer>
-            </article>
-          </div>
-          <div>
-            <img width="300px" src="/projects/lens.png" />
-            <article>
-              <div>
-                <header>
-                  Lens <small>December 2021</small>
-                </header>
-                <article>
-                  Lens is a website to show off some pictures I&apos;ve taken,
-                  designed very similar to znepb.me.
-                </article>
-              </div>
-              <footer>
-                <a href="https://lens.znepb.me">
-                  <Globe size="28px" />
-                </a>
-                <a
-                  href="https://github.com/znepb/lens"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  <GitHub size="28px" />
-                </a>
-              </footer>
-            </article>
-          </div>
-          <div>
-            <img width="300px" src="/projects/lit.png" />
-            <article>
-              <div>
-                <header>
-                  LIT <small>In Development</small>
-                </header>
-                <article>
-                  It&apos;s totally LIT, son! LIT is a chat app &amp; social
-                  media platform I&apos;ve been working on with{" "}
-                  <a rel="noreferrer" target="_blank" href="https://auti.one">
-                    AutiOne
-                  </a>
-                  .
-                </article>
-              </div>
-              <footer>
-                <a href="https://litsocial.app">
-                  <Globe size="28px" />
-                </a>
-              </footer>
-            </article>
-          </div>
-          <div>
-            <img width="300px" src="/projects/files.png" />
-            <article>
-              <div>
-                <header>
-                  files.znepb.me <small>September 2021</small>
-                </header>
-                <article>An incredibly minimalistic file dump.</article>
-              </div>
-              <footer>
-                <a href="https://files.znepb.me">
-                  <Globe size="28px" />
-                </a>
-                <a
-                  href="https://github.com/znepb/filemanager"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  <GitHub size="28px" />
-                </a>
-              </footer>
-            </article>
-          </div>
-          <div>
-            <img width="300px" src="/projects/zme6.png" />
-            <article>
-              <div>
-                <header>
-                  znepb.me v6 <small>December 2021</small>
-                </header>
-                <article>
-                  The 6th version of my website, made in NextJS. Why can&apos;t
-                  I just settle on one website? Good lord.
-                </article>
-              </div>
-              <footer>
-                <small
-                  style={{
-                    fontSize: "0.8rem",
-                  }}
-                >
-                  <em>You&apos;re already here.</em>
-                </small>
-              </footer>
-            </article>
-          </div>
-          <div>
-            <img width="300px" src="/projects/photos-site.png" />
-            <article>
-              <div>
-                <header>
-                  Photos <small>March 2021</small>
-                </header>
-                <article>
-                  A open-soruce photos website I&apos;ve since replaced (at
-                  least on znepb.me) with Lens.
-                </article>
-              </div>
-              <footer>
-                <a
-                  href="https://github.com/znepb/photos-site"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  <GitHub size="28px" />
-                </a>
-              </footer>
-            </article>
-          </div>
+          {projects.map((project: Project, index: number) => (
+            <div key={index}>
+              <Image
+                width={1000}
+                height={700}
+                src={require(`../../public/projects/${project.name
+                  .toLowerCase()
+                  .replace(" ", "-")}.png`)}
+                placeholder={"blur"}
+              />
+              <article>
+                <div>
+                  <header>
+                    {project.name} <small>{project.month}</small>
+                  </header>
+                  <article>{project.description}</article>
+                </div>
+                <footer>
+                  {project.sites.map((site: ProjectSite, index: number) => {
+                    let Icon =
+                      require(`react-feather/dist/icons/${site.icon.toLowerCase()}`).default;
+
+                    return (
+                      <a
+                        href={site.url}
+                        rel="noreferrer"
+                        target="_blank"
+                        key={index}
+                      >
+                        <Icon size={32} />
+                      </a>
+                    );
+                  })}
+                </footer>
+              </article>
+            </div>
+          ))}
         </div>
       </section>
       <section className="primary" id="connect">
@@ -373,7 +264,7 @@ export default function Index() {
                 "linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%)",
             }}
           >
-            <Instagram size="32px" /> <span>@mwenzel.percussion</span>
+            <Feather.Instagram size="32px" /> <span>@mwenzel.percussion</span>
           </a>
           <a
             href="https://twitter.com/im_znepb"
@@ -384,7 +275,7 @@ export default function Index() {
               background: "#1c9aef",
             }}
           >
-            <Twitter size="32px" /> <span>@im_znepb</span>
+            <Feather.Twitter size="32px" /> <span>@im_znepb</span>
           </a>
           <a
             href="https://github.com/znepb"
@@ -395,7 +286,7 @@ export default function Index() {
               background: "#24292e",
             }}
           >
-            <GitHub size="32px" /> <span>znepb</span>
+            <Feather.GitHub size="32px" /> <span>znepb</span>
           </a>
           <a
             href="https://discord.com/users/356209633313947648"
@@ -406,8 +297,7 @@ export default function Index() {
               background: "#5662f6",
             }}
           >
-            <img src="/svg/discord.svg" width="32px" />{" "}
-            <span>! read status (znepb)#0123</span>
+            <Discord size="32px" /> <span>znepb#1234</span>
           </a>
         </div>
       </section>
@@ -417,129 +307,42 @@ export default function Index() {
             <h2>Links</h2>
             <div className="headingDecoration"></div>
             <div className={styles.links}>
+              {links.map((link: Link, index: number) => (
+                <div key={index}>
+                  <article>
+                    <Image
+                      width={48}
+                      height={48}
+                      quality={100}
+                      src={link.image}
+                    />
+                    <main>
+                      <header>{link.name}</header>
+                      <footer>{link.description}</footer>
+                    </main>
+                  </article>
+                  <a href={link.url} target="_blank" rel="noreferrer">
+                    <Feather.ExternalLink />
+                  </a>
+                </div>
+              ))}
               <div>
-                <main>
-                  <header>AutiOne</header>
-                  <footer>
-                    Another programming nerd{" "}
-                    <span title="He insisted I put this here.">
-                      (and design nerd)
-                    </span>{" "}
-                    who helped me design this site.
-                  </footer>
-                </main>
-                <a href="https://auti.one" target="_blank" rel="noreferrer">
-                  <ExternalLink />
-                </a>
-              </div>
-              <div>
-                <main>
-                  <header>znepb/zeta</header>
-                  <footer>The source for znepb.me.</footer>
-                </main>
-                <a
-                  href="https://github.com/znepb/zeta"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <ExternalLink />
-                </a>
-              </div>
-              <div>
-                <main>
-                  <header>Coasters Spreadsheet</header>
-                  <footer>
-                    A record of every coaster I&apos;ve ridden, park I&apos;ve
-                    visited, and data on every coaster and amusment park visits.
-                    Rennovation coming Soon™
-                  </footer>
-                </main>
-                <a
-                  href="https://docs.google.com/spreadsheets/d/1KGE_UN3Ftr-P13eenqGx-tMuOkPr7EM7e4hEA-Gmclk/edit#gid=2055894933"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <ExternalLink />
-                </a>
-              </div>
-              <div>
-                <main>
-                  <header>Numbers Survey</header>
-                  <footer>
-                    Data of a survey I&apos;m currently conducting via Discord.
-                    This survey will end mid-February 2022. If you&apos;d like
-                    to participate, DM me on Discord with an integer from 1-10.
-                  </footer>
-                </main>
-                <a
-                  href="https://docs.google.com/spreadsheets/d/1VS-QbNVb4mq59j1bybDmQSWMO53cV1nuiiiuMBZmoZY/edit?usp=sharing"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <ExternalLink />
-                </a>
-              </div>
-              <div>
-                <main>
-                  <header>My Spotify playlist</header>
-                  <footer>
-                    It&apos;s called &quot;bad taste&quot; because I&apos;ve
-                    been told I have bad taste. Anyway, enjoy my wacky
-                    collection of favorite songs.
-                  </footer>
-                </main>
-                <a
-                  href="https://open.spotify.com/playlist/2coydXv9V3Aj2RtQfTRosX?si=6ac681fafe324990"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <ExternalLink />
-                </a>
-              </div>
-              {/*to be added - <div>
-                <main>
-                  <header>v5.znepb.me</header>
-                  <footer>An old version of znepb.me. I&apos;d like to add even older versions, but unfortunetly, I don&apos;t have backups of those.</footer>
-                </main>
-                <a href="https://v5.znepb.me" target="_blank" rel="noreferrer">
-                  <ExternalLink />
-                </a>
-              </div>*/}
-              <div>
-                <main>
-                  <header>timeline.znepb.me</header>
-                  <footer>The timeline of znepb.me (and just znepb)</footer>
-                </main>
-                <a
-                  href="https://timeline.znepb.me"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <ExternalLink />
-                </a>
-              </div>
-              <div>
-                <main>
-                  <header>analytics.znepb.me</header>
-                  <footer>Analytics of my servers and computer.</footer>
-                </main>
-                <a
-                  href="https://timeline.znepb.me"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <ExternalLink />
-                </a>
-              </div>
-              <div>
-                <main>
-                  <header>Buy me a coffee</header>
-                  <footer>
-                    Feeling generous and like what I&apos;m making? Consider
-                    supporting server costs via Buy Me a Coffee. Donations are
-                    greatly appreciated!
-                  </footer>
-                </main>
+                <article>
+                  <Image
+                    width={48}
+                    height={48}
+                    quality={100}
+                    src={"/svg/links/coffee.svg"}
+                  />
+                  <main>
+                    <header>Buy me a coffee</header>
+                    <footer>
+                      Feeling generous and like what I&apos;m making? Consider
+                      supporting server costs via Buy Me a Coffee. Donations are
+                      greatly appreciated!
+                    </footer>
+                  </main>
+                </article>
                 <a
                   href="https://www.buymeacoffee.com/znepb"
                   target="_blank"
@@ -602,7 +405,7 @@ export default function Index() {
                   <td>
                     <Roblox color="var(--text)" size={24} />
                     <Prisma color="var(--text)" size={24} />
-                    <Figma color="var(--text)" size={24} />
+                    <Feather.Figma color="var(--text)" size={24} />
                   </td>
                 </tr>
                 <tr>

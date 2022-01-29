@@ -1,0 +1,84 @@
+[
+  {
+    "name": "Countdowns",
+    "month": "October 2021",
+    "description": "A glorified clock with some countdowns to some important dates for me.",
+    "sites": [
+      {
+        "icon": "Globe",
+        "url": "https://countdowns.znepb.me"
+      },
+      {
+        "icon": "GitHub",
+        "url": "https://github.com/znepb/countdowns"
+      }
+    ]
+  },
+  {
+    "name": "Lens",
+    "month": "December 2021",
+    "description": "Lens is a website to show off some pictures I've taken, designed very similar to znepb.me.",
+    "sites": [
+      {
+        "icon": "Globe",
+        "url": "https://lens.znepb.me"
+      },
+      {
+        "icon": "GitHub",
+        "url": "https://github.com/znepb/lens"
+      }
+    ]
+  },
+  {
+    "name": "LIT",
+    "month": "In Development",
+    "description": "It's totally LIT, son! LIT is a chat app & social media platform I've been working on with AutiOne.",
+    "sites": [
+      {
+        "icon": "Globe",
+        "url": "https://litsocial.app"
+      }
+    ]
+  },
+  {
+    "name": "files.znepb.me",
+    "month": "September 2021",
+    "description": "An incredibly minimalistic file dump.",
+    "sites": [
+      {
+        "icon": "Globe",
+        "url": "https://files.znepb.me"
+      },
+      {
+        "icon": "GitHub",
+        "url": "https://github.com/znepb/filemanager"
+      }
+    ]
+  },
+  {
+    "name": "znepb.me v6",
+    "month": "September 2021",
+    "description": "An incredibly minimalistic file dump.",
+    "sites": [
+      {
+        "icon": "Globe",
+        "url": "https://znepb.me"
+      },
+      {
+        "icon": "GitHub",
+        "url": "https://github.com/znepb/zeta"
+      }
+    ]
+  },
+  {
+    "name": "Photos",
+    "month": "March 2021",
+    "description": "A open-soruce photos website I've since replaced (at least on znepb.me) with Lens.",
+    "sites": [
+      {
+        "icon": "GitHub",
+        "url": "https://github.com/znepb/photos-site"
+      }
+    ]
+  }
+]

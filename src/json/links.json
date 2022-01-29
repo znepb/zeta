@@ -1,0 +1,56 @@
+[
+  {
+    "name": "AutiOne",
+    "description": "Another programming (and design) nerd who helped me make this website.",
+    "url": "https://auti.one",
+    "image": "/svg/links/Auti1.svg"
+  },
+  {
+    "name": "Zeta",
+    "description": "GitHub repo for the source of znepb.me v6.",
+    "url": "https://github.com/znepb/zeta",
+    "image": "/svg/links/zeta.svg"
+  },
+  {
+    "name": "Lens",
+    "description": "A photo dump website I made.",
+    "url": "https://lens.znepb.me",
+    "image": "/svg/links/lens.svg"
+  },
+  {
+    "name": "znepb.me v5",
+    "description": "Archive of znepb.me v5.",
+    "url": "https://v5.znepb.me",
+    "image": "/png/v5.png"
+  },
+  {
+    "name": "Coasters Spreadsheet",
+    "description": "A record of every coaster I've ridden, park I've visited, and data on every coaster and amusment park visits.",
+    "url": "https://docs.google.com/spreadsheets/d/1KGE_UN3Ftr-P13eenqGx-tMuOkPr7EM7e4hEA-Gmclk",
+    "image": "/svg/links/coasters.svg"
+  },
+  {
+    "name": "Numbers Survey",
+    "description": "Data of a survey I'm currently conducting via Discord. This survey will end mid-February 2022. If you'd like to participate, DM me on Discord with an integer from 1-10.",
+    "url": "https://docs.google.com/spreadsheets/d/1VS-QbNVb4mq59j1bybDmQSWMO53cV1nuiiiuMBZmoZY",
+    "image": "/svg/links/numbersurvey.svg"
+  },
+  {
+    "name": "My Spotify playlist",
+    "description": "It's called \"bad taste\" because I've been told I have bad taste. Anyway, enjoy my wacky collection of favorite songs.",
+    "url": "https://open.spotify.com/playlist/2coydXv9V3Aj2RtQfTRosX?si=6ac681fafe324990",
+    "image": "/png/spotify.png"
+  },
+  {
+    "name": "timeline.znepb.me",
+    "description": "Timeline of znepb.me (and just znepb)",
+    "url": "https://timeline.znepb.me",
+    "image": "/svg/links/clock.svg"
+  },
+  {
+    "name": "analytics.znepb.me",
+    "description": "Data relating to my computer and servers.",
+    "url": "https://analytics.znepb.me",
+    "image": "/svg/links/grafana.svg"
+  }
+]

@@ -1,0 +1,100 @@
+[
+  {
+    "version": [6, 6],
+    "date": "Jan 23 2022",
+    "time": "16:21:00",
+    "notes": [
+      "Added icons to links",
+      "Links, changelog and projects are now all JSON-based."
+    ]
+  },
+  {
+    "version": [6, 5, 4],
+    "date": "Jan 21 2022",
+    "time": "16:21:00",
+    "notes": ["Logo in footer will now change depending on theme"]
+  },
+  {
+    "version": [6, 5, 3],
+    "date": "Jan 18 2022",
+    "time": "15:13:00",
+    "notes": ["Change a link thing"]
+  },
+  {
+    "version": [6, 5, 2],
+    "date": "Jan 18 2022",
+    "time": "15:04:00",
+    "notes": ["Fixed Spotify Wrapped archive link"]
+  },
+  {
+    "version": [6, 5, 1],
+    "date": "Jan 18 2022",
+    "time": "15:00:00",
+    "notes": [
+      "Changed Links & Skills section around",
+      "Added older znepb.me versions to the changelog"
+    ]
+  },
+  {
+    "version": [6, 5],
+    "date": "Jan 17 2022",
+    "time": "14:17:00",
+    "notes": [
+      "Added Skills and Links section",
+      "Added settings",
+      "Added themes",
+      "Link to my Discord profile on Connect section",
+      "Projects now have dates"
+    ]
+  },
+  {
+    "version": [6, 4],
+    "date": "Jan 3 2022",
+    "time": "17:25:00",
+    "notes": ["Added noscript message"]
+  },
+  {
+    "version": [6, 3],
+    "date": "Jan 3 2022",
+    "time": "14:50:00",
+    "notes": [
+      "🎉 Happy New Year!",
+      "Archived Spotify Wrapped",
+      "New fancy backgrounds for socials",
+      "Snow actually works now"
+    ]
+  },
+  {
+    "version": [6, 2],
+    "date": "Dec 28 2021",
+    "time": "19:00:00",
+    "notes": [
+      "Better CSS",
+      "Uniform CSS across znepb.me (just Lens as of writing)",
+      "Snow on homepage",
+      "Special effects for my birthday"
+    ]
+  },
+  {
+    "version": [6, 1],
+    "date": "Dec 7 2021",
+    "time": "16:53:00",
+    "notes": [
+      "Converted Spotify Wrapped to a JSON-file based page",
+      "Added changelog page",
+      "Added \"Show More\" to Spotify Wrapped"
+    ]
+  },
+  {
+    "version": [6, 0, 1],
+    "date": "Dec 5 2021",
+    "time": "00:00:00",
+    "notes": ["Fix column sizing issues"]
+  },
+  {
+    "version": [6, 0],
+    "date": "Dec 5 2021",
+    "time": "00:00:00",
+    "notes": ["znepb.me v6 Now made in Next.JS!"]
+  }
+]

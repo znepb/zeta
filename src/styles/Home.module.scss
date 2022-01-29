@@ -90,7 +90,7 @@
     background-color: var(--lighterBackground);
     width: 1fr;
 
-    & > img {
+    & > span {
       border-radius: 1rem 1rem 0 0;
       width: 100%;
     }
@@ -151,13 +151,21 @@
     border-radius: 1rem;
     gap: 1.5rem;
 
-    & > main {
-      & > header {
-        font-weight: bold;
-      }
+    & > article {
+      display: flex;
+      flex-direction: row;
 
-      & > footer {
-        font-size: 1rem;
+      gap: 1rem;
+      align-items: center;
+
+      & > main {
+        & > header {
+          font-weight: bold;
+        }
+
+        & > footer {
+          font-size: 1rem;
+        }
       }
     }
 

@@ -1,0 +1,54 @@
+[
+  {
+    "version": [5, 3],
+    "date": "May 20 2021",
+    "time": "00:00:00",
+    "notes": ["Google analytics or something? I don't know."]
+  },
+  {
+    "version": [5, 2],
+    "date": "May 2021",
+    "time": "00:00:00",
+    "notes": ["Apparently it existed at some point."]
+  },
+  {
+    "version": [5, 1],
+    "date": "Apr 24 2021",
+    "time": "00:00:00",
+    "notes": ["Added dark theme & theme selector"]
+  },
+  {
+    "version": [5, 0],
+    "date": "Apr 11 2021",
+    "time": "00:00:00",
+    "notes": ["znepb.me v5 release"]
+  },
+  {
+    "version": [4, 0],
+    "date": "January 2021",
+    "time": "00:00:00",
+    "notes": ["znepb.me v4 starts development, but is never finished."]
+  },
+  {
+    "version": [3, 0],
+    "date": "October 2019",
+    "time": "00:00:00",
+    "notes": [
+      "znepb.me v3, also based on Bootstrap but with material design, is released. Unfortunetly, this version of znepb.me cannot be found on the Wayback Machine."
+    ]
+  },
+  {
+    "version": [2, 0],
+    "date": "February 24 2019",
+    "time": "00:00:00",
+    "notes": [
+      "znepb.me v2, based on Bootstrap was released. This is the only version of znepb.me (apart from v5 and v6) that is archived well."
+    ]
+  },
+  {
+    "version": [1, 0],
+    "date": "August 24 2018",
+    "time": "00:00:00",
+    "notes": ["znepb.me is registered, and znepb.me v1 releases."]
+  }
+]
