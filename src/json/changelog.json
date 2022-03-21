@@ -1,5 +1,11 @@
 [
   {
+    "version": [6, 7, 1],
+    "date": "March 21 2022",
+    "time": "12:35:00",
+    "notes": ["Package updates"]
+  },
+  {
     "version": [6, 7],
     "date": "March 21 2022",
     "time": "12:30:00",
