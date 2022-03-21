@@ -51,7 +51,6 @@ import { useEffect, useState } from "react";
 import { Link, Project, ProjectSite } from "../types";
 
 export default function Index() {
-  const timeAgo = new TimeAgo("en-US");
   const [age, setAge] = useState(14);
 
   const [confetti, setConfetti] = useState<any>();
@@ -59,16 +58,9 @@ export default function Index() {
   const [todayIs, setTodayIs] = useState<string | undefined>();
 
   useEffect(() => {
-    const old = timeAgo.format(new Date("Mar 6 2007 19:45:00"));
+    const old = new Date("Mar 6 2007 19:45:00");
     const now = new Date();
-
-    if (old && typeof old === "string") {
-      const age = old.match(/\d+/);
-
-      if (age && age[0]) {
-        setAge(Number(age[0]) - 1);
-      }
-    }
+    setAge(new Date(now.getTime() - old.getTime()).getUTCFullYear() - 1970);
 
     const month = now.getMonth() + 1;
     const date = now.getDate();
@@ -159,8 +151,8 @@ export default function Index() {
         </p>
 
         <p>
-          Finally, I am a huge roller coaster nerd. As of October 22nd, 2021, I
-          have ridden 52 roller coasters, a total of 283 times. I&apos;ve been
+          Finally, I am a huge roller coaster nerd. As of December 23nd, 2021, I
+          have ridden 52 roller coasters, a total of 286 times. I&apos;ve been
           to 5 amusment parks, and my home park is Kings Island. My favorite
           roller coaster is Steel Vengance at Cedar Point.{" "}
           <small>(Very original, I know.)</small> If you&apos;d like to see all
@@ -310,12 +302,7 @@ export default function Index() {
               {links.map((link: Link, index: number) => (
                 <div key={index}>
                   <article>
-                    <Image
-                      width={48}
-                      height={48}
-                      quality={100}
-                      src={link.image}
-                    />
+                    <img width={48} height={48} src={link.image} />
                     <main>
                       <header>{link.name}</header>
                       <footer>{link.description}</footer>
@@ -328,12 +315,7 @@ export default function Index() {
               ))}
               <div>
                 <article>
-                  <Image
-                    width={48}
-                    height={48}
-                    quality={100}
-                    src={"/svg/links/coffee.svg"}
-                  />
+                  <img width={48} height={48} src={"/svg/links/coffee.svg"} />
                   <main>
                     <header>Buy me a coffee</header>
                     <footer>
@@ -352,107 +334,172 @@ export default function Index() {
               </div>
             </div>
           </section>
-          <section className={styles.skillsWrapper}>
-            <h2>Skills</h2>
-            <div className="headingDecoration"></div>
-            <table className={styles.skills}>
-              <thead>
-                <tr>
-                  <th>Experience Level</th>
-                  <th>Front-end</th>
-                  <th>Back-end</th>
-                  <th>General Purpose</th>
-                  <th>Scripting</th>
-                  <th>Frameworks</th>
-                  <th>Other Skills</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th>Expert</th>
-                  <td>
-                    <Html5 color="var(--text)" size={24} />
-                  </td>
-                  <td>
-                    <Nodedotjs color="var(--text)" size={24} />
-                  </td>
-                  <td>
-                    <Javascript color="var(--text)" size={24} />
-                  </td>
-                  <td>
-                    <Lua color="var(--text)" size={24} />
-                  </td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th>Great</th>
-                  <td>
-                    <CssThree color="var(--text)" size={24} />
-                    <Nextdotjs color="var(--text)" size={24} />
-                    <Sass color="var(--text)" size={24} />
-                  </td>
-                  <td>
-                    <Php color="var(--text)" size={24} />
-                  </td>
-                  <td>
-                    <Typescript color="var(--text)" size={24} />
-                  </td>
-                  <td></td>
-                  <td>
-                    <Express color="var(--text)" size={24} />
-                  </td>
-                  <td>
-                    <Roblox color="var(--text)" size={24} />
-                    <Prisma color="var(--text)" size={24} />
-                    <Feather.Figma color="var(--text)" size={24} />
-                  </td>
-                </tr>
-                <tr>
-                  <th>Good</th>
-                  <td>
-                    <ReactJs color="var(--text)" size={24} />
-                  </td>
-                  <td></td>
-                  <td>
-                    <Java color="var(--text)" size={24} />
-                  </td>
-                  <td>
-                    <Python color="var(--text)" size={24} />
-                  </td>
-                  <td></td>
-                  <td>
-                    <Musescore color="var(--text)" size={24} />
-                  </td>
-                </tr>
-                <tr>
-                  <th>Capable</th>
-                  <td></td>
-                  <td></td>
-                  <td>
-                    <Cplusplus color="var(--text)" size={24} />
-                  </td>
-                  <td></td>
-                  <td></td>
-                  <td>
-                    <i title="AutoDesk Fusion 360">
-                      <Autodesk color="var(--text)" size={24} />
-                    </i>
-                  </td>
-                </tr>
-                <tr>
-                  <th>Poor</th>
-                  <td></td>
-                  <td></td>
-                  <td>
-                    <Csharp color="var(--text)" size={24} />
-                  </td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-              </tbody>
-            </table>
+          <section
+            style={{ display: "flex", flexDirection: "column", gap: "5rem" }}
+          >
+            <div className={styles.skillsWrapper}>
+              <h2>Skills</h2>
+              <div className="headingDecoration"></div>
+              <table className={styles.skills}>
+                <thead>
+                  <tr>
+                    <th>Experience Level</th>
+                    <th>Front-end</th>
+                    <th>Back-end</th>
+                    <th>General Purpose</th>
+                    <th>Scripting</th>
+                    <th>Frameworks</th>
+                    <th>Other Skills</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>Expert</th>
+                    <td>
+                      <Html5 color="var(--text)" size={24} />
+                    </td>
+                    <td>
+                      <Nodedotjs color="var(--text)" size={24} />
+                    </td>
+                    <td>
+                      <Javascript color="var(--text)" size={24} />
+                    </td>
+                    <td>
+                      <Lua color="var(--text)" size={24} />
+                    </td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th>Great</th>
+                    <td>
+                      <CssThree color="var(--text)" size={24} />
+                      <Nextdotjs color="var(--text)" size={24} />
+                      <Sass color="var(--text)" size={24} />
+                    </td>
+                    <td>
+                      <Php color="var(--text)" size={24} />
+                    </td>
+                    <td>
+                      <Typescript color="var(--text)" size={24} />
+                    </td>
+                    <td></td>
+                    <td>
+                      <Express color="var(--text)" size={24} />
+                    </td>
+                    <td>
+                      <Roblox color="var(--text)" size={24} />
+                      <Prisma color="var(--text)" size={24} />
+                      <Feather.Figma color="var(--text)" size={24} />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Good</th>
+                    <td>
+                      <ReactJs color="var(--text)" size={24} />
+                    </td>
+                    <td></td>
+                    <td>
+                      <Java color="var(--text)" size={24} />
+                    </td>
+                    <td>
+                      <Python color="var(--text)" size={24} />
+                    </td>
+                    <td></td>
+                    <td>
+                      <Musescore color="var(--text)" size={24} />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Capable</th>
+                    <td></td>
+                    <td></td>
+                    <td>
+                      <Cplusplus color="var(--text)" size={24} />
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                      <i title="AutoDesk Fusion 360">
+                        <Autodesk color="var(--text)" size={24} />
+                      </i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Poor</th>
+                    <td></td>
+                    <td></td>
+                    <td>
+                      <Csharp color="var(--text)" size={24} />
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div>
+              <h2>Computer Specifications / Peripherals</h2>
+              <div className="headingDecoration"></div>
+              <table className={styles.skills}>
+                <tbody>
+                  <tr>
+                    <th>CPU</th>
+                    <td>AMD Ryzen 7 2700X</td>
+                  </tr>
+                  <tr>
+                    <th>CPU Cooler</th>
+                    <td>Corsair H100i Elite Capellix RGB</td>
+                  </tr>
+                  <tr>
+                    <th>Motherboard</th>
+                    <td>ROG STRIX B550-F</td>
+                  </tr>
+                  <tr>
+                    <th>RAM</th>
+                    <td>Corsair Vengance RGB 32GB (3200MHz)</td>
+                  </tr>
+                  <tr>
+                    <th>Graphics Card</th>
+                    <td>ASUS Phoenix 1050 Ti</td>
+                  </tr>
+                  <tr>
+                    <th>Storage 1 (SATA SSD)</th>
+                    <td>500GB Samsung 860 EVO</td>
+                  </tr>
+                  <tr>
+                    <th>Storage 2 (HDD)</th>
+                    <td>2TB Seagate drive</td>
+                  </tr>
+                  <tr>
+                    <th>Case</th>
+                    <td>Corsair 4000X RGB</td>
+                  </tr>
+                  <tr>
+                    <th>Power Supply</th>
+                    <td>Corsair RMX 850</td>
+                  </tr>
+                  <tr>
+                    <th>Keyboard</th>
+                    <td>Razer Ornata Chroma</td>
+                  </tr>
+                  <tr>
+                    <th>Mouse</th>
+                    <td>Some HP mouse, I have no idea</td>
+                  </tr>
+                  <tr>
+                    <th>Microphone</th>
+                    <td>Blue Yeti 2017(?) model</td>
+                  </tr>
+                  <tr>
+                    <th>Mouse Pad</th>
+                    <td>Corsair MM700 RGB</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </section>
         </div>
       </section>

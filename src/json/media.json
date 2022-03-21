@@ -1,17 +1,17 @@
 [
   {
-    "image": "media/squidgame.jpg",
-    "logo": "media/squidgamelogo.png",
-    "id": "squidgame",
-    "name": "Squid Game (오징어 게임)",
-    "offset": "25%"
+    "image": "media/uncharted.jpg",
+    "logo": "media/uncharted-logo.png",
+    "id": "uncharted",
+    "name": "Uncharted",
+    "offset": "60%"
   },
   {
     "image": "media/breaking-bad.jpg",
     "logo": "media/breaking-bad-logo.png",
     "id": "breakingbad",
     "name": "Breaking Bad",
-    "offset": "0%"
+    "offset": "15%"
   },
   {
     "image": "media/ponyo.jpg",
@@ -19,5 +19,12 @@
     "id": "ponyo",
     "name": "Ponyo (崖の上のポニョ)",
     "offset": "40%"
+  },
+  {
+    "image": "media/squidgame.jpg",
+    "logo": "media/squidgamelogo.png",
+    "id": "squidgame",
+    "name": "Squid Game (오징어 게임)",
+    "offset": "25%"
   }
 ]

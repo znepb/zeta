@@ -1,5 +1,18 @@
 [
   {
+    "version": [6, 7],
+    "date": "March 21 2022",
+    "time": "12:30:00",
+    "notes": [
+      "Added Computer Specs & Peripherals section",
+      "Fix sizing on link icons",
+      "Fixed age counter",
+      "Add Uncharted to Movies & Shows so all columns have four rows",
+      "Fix znepb.me project",
+      "Update roller coaster count section"
+    ]
+  },
+  {
     "version": [6, 6],
     "date": "Jan 23 2022",
     "time": "16:21:00",

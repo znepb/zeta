@@ -154,11 +154,16 @@
     & > article {
       display: flex;
       flex-direction: row;
+      flex: 0 1 1;
 
       gap: 1rem;
       align-items: center;
+      justify-content: left;
 
       & > main {
+        display: flex;
+        flex-direction: column;
+
         & > header {
           font-weight: bold;
         }
