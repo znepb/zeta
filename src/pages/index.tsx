@@ -446,8 +446,12 @@ export default function Index() {
               <table className={styles.skills}>
                 <tbody>
                   <tr>
+                    <th>OS</th>
+                    <td>Windows 10 Home</td>
+                  </tr>
+                  <tr>
                     <th>CPU</th>
-                    <td>AMD Ryzen 7 2700X</td>
+                    <td>AMD Ryzen 9 5900X</td>
                   </tr>
                   <tr>
                     <th>CPU Cooler</th>
@@ -496,6 +500,10 @@ export default function Index() {
                   <tr>
                     <th>Mouse Pad</th>
                     <td>Corsair MM700 RGB</td>
+                  </tr>
+                  <tr>
+                    <th>Local Server</th>
+                    <td>Raspberry Pi 3B+</td>
                   </tr>
                 </tbody>
               </table>

@@ -1,5 +1,11 @@
 [
   {
+    "version": [6, 7, 2],
+    "date": "March 31 2022",
+    "time": "15:50:00",
+    "notes": ["Update system info"]
+  },
+  {
     "version": [6, 7, 1],
     "date": "March 21 2022",
     "time": "12:35:00",
