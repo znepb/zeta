@@ -1,5 +1,35 @@
 [
   {
+    "name": "Caverns",
+    "month": "May 2022",
+    "description": "A re-write of the original caverns, with a primary intent of a more expandable codebase. Currently in development, updates in the Discord!",
+    "sites": [
+      {
+        "icon": "Youtube",
+        "url": "https://www.youtube.com/watch?v=seO-2GbNnfs"
+      },
+      {
+        "icon": "Message-Circle",
+        "url": "https://discord.gg/D4VkNjVk6Q"
+      }
+    ]
+  },
+  {
+    "name": "znepb.me v6",
+    "month": "December 2021",
+    "description": "You're already here.",
+    "sites": [
+      {
+        "icon": "Globe",
+        "url": "https://znepb.me"
+      },
+      {
+        "icon": "GitHub",
+        "url": "https://github.com/znepb/zeta"
+      }
+    ]
+  },
+  {
     "name": "Countdowns",
     "month": "October 2021",
     "description": "A glorified clock with some countdowns to some important dates for me.",
@@ -15,23 +45,8 @@
     ]
   },
   {
-    "name": "Lens",
-    "month": "December 2021",
-    "description": "Lens is a website to show off some pictures I've taken, designed very similar to znepb.me.",
-    "sites": [
-      {
-        "icon": "Globe",
-        "url": "https://lens.znepb.me"
-      },
-      {
-        "icon": "GitHub",
-        "url": "https://github.com/znepb/lens"
-      }
-    ]
-  },
-  {
     "name": "LIT",
-    "month": "In Development",
+    "month": "On Hold",
     "description": "It's totally LIT, son! LIT is a chat app & social media platform I've been working on with AutiOne.",
     "sites": [
       {
@@ -56,21 +71,6 @@
     ]
   },
   {
-    "name": "znepb.me v6",
-    "month": "December 2021",
-    "description": "You're already here.",
-    "sites": [
-      {
-        "icon": "Globe",
-        "url": "https://znepb.me"
-      },
-      {
-        "icon": "GitHub",
-        "url": "https://github.com/znepb/zeta"
-      }
-    ]
-  },
-  {
     "name": "Photos",
     "month": "March 2021",
     "description": "A open-soruce photos website I've since replaced (at least on znepb.me) with Lens.",
@@ -78,6 +78,17 @@
       {
         "icon": "GitHub",
         "url": "https://github.com/znepb/photos-site"
+      }
+    ]
+  },
+  {
+    "name": "Caverns (Original)",
+    "month": "March 2020",
+    "description": "Roblox game I started work on not long after quarantine began. The codebase was not expandable so I abandoned the project after a month.",
+    "sites": [
+      {
+        "icon": "Play-Circle",
+        "url": "https://www.roblox.com/games/4815387339/Caverns"
       }
     ]
   }

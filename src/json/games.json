@@ -1,28 +1,82 @@
 [
   {
     "image": "games/minecraft.jpg",
-    "id": "mc",
     "name": "Minecraft",
-    "offset": "40%"
+    "offset": "40%",
+    "subtext": "A game about mining and crafting.. I'm sure you know.",
+    "links": [
+      {
+        "icon": "link",
+        "url": "https://minecraft.net"
+      },
+      {
+        "icon": "wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Minecraft"
+      }
+    ]
   },
   {
     "image": "games/scrapmechanic.png",
     "logo": "games/scrapmechanic-logo.png",
-    "id": "sm",
     "name": "Scrap Mechanic",
-    "offset": "25%"
+    "offset": "25%",
+    "subtext": "Robots are trying to kill you. Shoot them with potatoes.",
+    "links": [
+      {
+        "icon": "link",
+        "url": "https://scrapmechanic.com"
+      },
+      {
+        "icon": "steam",
+        "url": "https://store.steampowered.com/app/387990/Scrap_Mechanic/"
+      },
+      {
+        "icon": "wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Scrap_Mechanic"
+      }
+    ]
   },
   {
-    "image": "games/planetcoaster.jpg",
+    "image": "games/planetcoaster.webp",
     "logo": "games/planetcoaster-logo.png",
-    "id": "pc",
     "name": "Planet Coaster",
-    "offset": "50%"
+    "offset": "50%",
+    "subtext": "Build roller coasters! How fun!",
+    "links": [
+      {
+        "icon": "link",
+        "url": "https://www.planetcoaster.com/"
+      },
+      {
+        "icon": "steam",
+        "url": "https://store.steampowered.com/app/493340/Planet_Coaster/"
+      },
+      {
+        "icon": "wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Planet_Coaster"
+      }
+    ]
   },
   {
     "image": "games/cs.jpg",
     "id": "cs",
     "name": "Citites: Skylines",
-    "offset": "10%"
+    "url": "https://www.paradoxinteractive.com/games/cities-skylines/about",
+    "offset": "10%",
+    "subtext": "Manage a city. Also don't become bankrupt.",
+    "links": [
+      {
+        "icon": "link",
+        "url": "https://www.paradoxinteractive.com/games/cities-skylines/about"
+      },
+      {
+        "icon": "steam",
+        "url": "https://store.steampowered.com/app/255710/Cities_Skylines/"
+      },
+      {
+        "icon": "wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Cities:_Skylines"
+      }
+    ]
   }
 ]

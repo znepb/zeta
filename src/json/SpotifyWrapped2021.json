@@ -2,8 +2,8 @@
   "minutesListened": 57154,
   "moreThan": 94,
   "audioAura": [
-    {"name": "bold", "color": "d4531c"},
-    {"name": "focused", "color": "fff53d"}
+    { "name": "bold", "color": "d4531c" },
+    { "name": "focused", "color": "fff53d" }
   ],
   "topGeneres": [
     "Lo-fi beats",
@@ -15,32 +15,32 @@
   "artists": [
     {
       "name": "C418",
-      "artist": "Streamed 5906 minutes - Top song: Aria Math (#61)",
+      "subtext": "Streamed 5906 minutes - Top song: Aria Math (#61)",
       "image": "spotifywrapped2021/artists/c418.jpg"
     },
     {
       "name": "Tally Hall",
-      "artist": "Top song: Ruler of Everything (#5)",
+      "subtext": "Top song: Ruler of Everything (#5)",
       "logo": "spotifywrapped2021/artists/tallyhall.jpg",
       "image": "spotifywrapped2021/artists/tallyhall-background.jpg",
       "offset": "20%"
     },
     {
       "name": "Miracle Musical",
-      "artist": "Top song: Dream Sweet in Sea Major (#1)",
+      "subtext": "Top song: Dream Sweet in Sea Major (#1)",
       "logo": "spotifywrapped2021/albums/hawaii-part-ii.jpg",
       "image": "spotifywrapped2021/albums/hawaii-part-ii-cropped.jpg",
       "offset": "20%"
     },
     {
       "name": "Lil Darkie",
-      "artist": "Top song: ANXEITY (#17)",
+      "subtext": "Top song: ANXEITY (#17)",
       "image": "spotifywrapped2021/artists/lildarkie.jpg",
       "offset": "60%"
     },
     {
       "name": "Kill Paris",
-      "artist": "Top song: Two Minds (#8)",
+      "subtext": "Top song: Two Minds (#8)",
       "image": "spotifywrapped2021/artists/killparis.jpg",
       "offset": "20%"
     }
@@ -48,123 +48,123 @@
   "songs": [
     {
       "name": "Miracle Musical - Dream Sweet in Sea Major",
-      "artist": "Streamed 114 times",
+      "subtext": "Streamed 114 times",
       "logo": "spotifywrapped2021/albums/hawaii-part-ii.jpg",
       "image": "spotifywrapped2021/albums/hawaii-part-ii-cropped.jpg",
       "offset": "20%"
     },
     {
       "name": "Isle Unto Thyself",
-      "artist": "Miracle Musical",
+      "subtext": "Miracle Musical",
       "logo": "spotifywrapped2021/albums/hawaii-part-ii.jpg",
       "image": "spotifywrapped2021/albums/hawaii-part-ii-cropped.jpg",
       "offset": "20%"
     },
     {
       "name": "Black Rainbows",
-      "artist": "Miracle Musical",
+      "subtext": "Miracle Musical",
       "logo": "spotifywrapped2021/albums/hawaii-part-ii.jpg",
       "image": "spotifywrapped2021/albums/hawaii-part-ii-cropped.jpg",
       "offset": "20%"
     },
     {
       "name": "The Mind Electric",
-      "artist": "Miracle Musical",
+      "subtext": "Miracle Musical",
       "logo": "spotifywrapped2021/albums/hawaii-part-ii.jpg",
       "image": "spotifywrapped2021/albums/hawaii-part-ii-cropped.jpg",
       "offset": "20%"
     },
     {
       "name": "Ruler of Everything",
-      "artist": "Tally Hall",
-      "image": "music/mmmm.jpg"
+      "subtext": "Tally Hall",
+      "image": "spotifywrapped2021/albums/mmmm.jpg"
     },
     {
       "name": "Bahamiam Rap City",
-      "artist": "Joe Hawley",
+      "subtext": "Joe Hawley",
       "image": "spotifywrapped2021/albums/jhjh.jpg",
       "offset": "20%"
     },
     {
       "name": "Murders",
-      "artist": "Miracle Musical",
+      "subtext": "Miracle Musical",
       "logo": "spotifywrapped2021/albums/hawaii-part-ii.jpg",
       "image": "spotifywrapped2021/albums/hawaii-part-ii-cropped.jpg",
       "offset": "20%"
     },
     {
       "name": "Cool Ranch",
-      "artist": "Kill Paris",
+      "subtext": "Kill Paris",
       "image": "spotifywrapped2021/albums/galaxieswithinus.jpg",
       "offset": "55%"
     },
     {
       "name": "Banana Man",
-      "artist": "Tally Hall",
-      "image": "music/mmmm.jpg"
+      "subtext": "Tally Hall",
+      "image": "spotifywrapped2021/albums/mmmm.jpg"
     },
     {
       "name": "Ghost in a Song",
-      "artist": "Grabbitz",
+      "subtext": "Grabbitz",
       "image": "spotifywrapped2021/albums/ghostinasong.jpg",
       "offset": "10%"
     },
     {
       "name": "Labyrinth",
-      "artist": "Miracle Musical",
+      "subtext": "Miracle Musical",
       "logo": "spotifywrapped2021/albums/hawaii-part-ii.jpg",
       "image": "spotifywrapped2021/albums/hawaii-part-ii-cropped.jpg",
       "offset": "20%"
     },
     {
       "name": "Two Minds",
-      "artist": "Kill Paris",
+      "subtext": "Kill Paris",
       "image": "spotifywrapped2021/albums/twominds.jpg",
       "offset": "60%"
     },
     {
       "name": "Taken for a Ride",
-      "artist": "Tally Hall",
-      "image": "music/mmmm.jpg"
+      "subtext": "Tally Hall",
+      "image": "spotifywrapped2021/albums/mmmm.jpg"
     },
     {
       "name": "Uwa!! So Holiday♫",
-      "artist": "Tally Hall",
+      "subtext": "Tally Hall",
       "image": "spotifywrapped2021/albums/undertale.jpg"
     },
     {
       "name": "Introduction to the Snow",
-      "artist": "Miracle Musical",
+      "subtext": "Miracle Musical",
       "logo": "spotifywrapped2021/albums/hawaii-part-ii.jpg",
       "image": "spotifywrapped2021/albums/hawaii-part-ii-cropped.jpg",
       "offset": "20%"
     },
     {
       "name": "ANXEITY",
-      "artist": "Lil Darkie",
+      "subtext": "Lil Darkie",
       "image": "spotifywrapped2021/albums/anxeity.jpg",
       "offset": "40%"
     },
     {
       "name": "Pump Up the Jam",
-      "artist": "Technotronic",
+      "subtext": "Technotronic",
       "image": "spotifywrapped2021/albums/pumpupthejam.jpeg"
     },
     {
       "name": "Sunflower",
-      "artist": "Post Malone & Swae Lee",
+      "subtext": "Post Malone & Swae Lee",
       "image": "spotifywrapped2021/albums/sunflower.jpg",
       "offset": "40%"
     },
     {
       "name": "Variations on a Cloud",
-      "artist": "Miracle Musical",
+      "subtext": "Miracle Musical",
       "image": "spotifywrapped2021/albums/voac.png",
       "offset": "40%"
     },
     {
       "name": "Out my Head",
-      "artist": "Fox Stevenson",
+      "subtext": "Fox Stevenson",
       "image": "spotifywrapped2021/albums/outmyhead.jpg",
       "offset": "40%"
     }
@@ -172,28 +172,28 @@
   "soundtrack": [
     {
       "name": "Opening credits theme",
-      "artist": "Nickelback - Photograph (I have no idea why this is here)",
+      "subtext": "Nickelback - Photograph (I have no idea why this is here)",
       "image": "spotifywrapped2021/albums/photograph.jpg"
     },
     {
       "name": "Song as I defeat the ancient vengeful spirit",
-      "artist": "Tally Hall - Ruler of Everything",
-      "image": "music/mmmm.jpg"
+      "subtext": "Tally Hall - Ruler of Everything",
+      "image": "spotifywrapped2021/albums/mmmm.jpg"
     },
     {
       "name": "Song as I score the last point before the buzzer",
-      "artist": "Miracle Musical - Variations on a Cloud",
+      "subtext": "Miracle Musical - Variations on a Cloud",
       "image": "spotifywrapped2021/albums/voac.png",
       "offset": "25%"
     },
     {
       "name": "Faceoff with a rival dance crew",
-      "artist": "Technotronic - Pump Up the Jam",
+      "subtext": "Technotronic - Pump Up the Jam",
       "image": "spotifywrapped2021/albums/pumpupthejam.jpeg"
     },
     {
       "name": "Single tear drops into a pool with my reflection",
-      "artist": "Lil Darkie - tale of yehoshua (interlude)",
+      "subtext": "Lil Darkie - tale of yehoshua (interlude)",
       "image": "spotifywrapped2021/albums/swamp.png"
     }
   ]

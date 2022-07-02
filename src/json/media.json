@@ -1,30 +1,70 @@
 [
   {
-    "image": "media/uncharted.jpg",
-    "logo": "media/uncharted-logo.png",
-    "id": "uncharted",
-    "name": "Uncharted",
-    "offset": "60%"
+    "image": "media/breaking-bad.webp",
+    "logo": "media/breaking-bad-logo.png",
+    "name": "Breaking Bad",
+    "offset": "15%",
+    "hasSpoilers": true,
+    "subtext": "Walter gets cancer, and starts a meth empire.",
+    "links": [
+      {
+        "icon": "netflix",
+        "url": "https://www.netflix.com/title/70196252"
+      },
+      {
+        "icon": "wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Breaking_Bad"
+      }
+    ]
   },
   {
-    "image": "media/breaking-bad.jpg",
-    "logo": "media/breaking-bad-logo.png",
-    "id": "breakingbad",
-    "name": "Breaking Bad",
-    "offset": "15%"
+    "image": "media/better-call-saul.webp",
+    "logo": "media/better-call-saul-logo.svg",
+    "name": "Better Call Saul",
+    "offset": "60%",
+    "hasSpoilers": true,
+    "subtext": "I'm not quite sure yet.",
+    "links": [
+      {
+        "icon": "netflix",
+        "url": "https://www.netflix.com/title/80021955"
+      },
+      {
+        "icon": "wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Better_Call_Saul"
+      }
+    ]
   },
   {
     "image": "media/ponyo.jpg",
     "logo": "media/ponyologo.png",
-    "id": "ponyo",
-    "name": "Ponyo (崖の上のポニョ)",
-    "offset": "40%"
+    "name": "Ponyo",
+    "offset": "40%",
+    "hasSpoilers": true,
+    "subtext": "A little fish is deperate to become a little girl.",
+    "links": [
+      {
+        "icon": "wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Ponyo"
+      }
+    ]
   },
   {
     "image": "media/squidgame.jpg",
     "logo": "media/squidgamelogo.png",
-    "id": "squidgame",
-    "name": "Squid Game (오징어 게임)",
-    "offset": "25%"
+    "name": "Squid Game",
+    "offset": "25%",
+    "hasSpoilers": true,
+    "subtext": "People in debt fight to be the last standing, and get $$$.",
+    "links": [
+      {
+        "icon": "netflix",
+        "url": "https://www.netflix.com/title/81262746"
+      },
+      {
+        "icon": "wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Squid_Game"
+      }
+    ]
   }
 ]

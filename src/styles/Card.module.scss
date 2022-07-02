@@ -1,0 +1,78 @@
+.card {
+  width: 1fr;
+  min-height: 86px;
+  position: relative;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+.cardBackgroundImage {
+  z-index: 1;
+  border-radius: 0.5rem;
+}
+
+.cardContent {
+  z-index: 100;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  gap: 1rem;
+
+  color: white;
+  padding: 1rem;
+  min-height: 86px;
+  height: 100%;
+  border-radius: 0.5rem;
+
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0.3) 100%
+  );
+}
+
+.cardImage {
+  display: flex;
+  height: 64px;
+  width: 64px;
+  min-width: 64px;
+  border-radius: 0.5rem;
+
+  & > span {
+    border-radius: inherit;
+  }
+}
+
+.cardInfo {
+  flex-grow: 1;
+}
+
+.cardInfoHeader {
+  font-size: 1.4rem;
+  flex-shrink: 1;
+}
+
+.cardInfoAuthor {
+  color: rgb(189, 189, 189);
+  font-size: 0.8rem;
+  flex-shrink: 1;
+}
+
+.cardLinks {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.link {
+  color: white;
+}
+
+.spoiler {
+  content: "Has spoilers! Hover to view.";
+
+  &:hover {
+    content: initial;
+  }
+}

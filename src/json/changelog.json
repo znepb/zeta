@@ -1,5 +1,18 @@
 [
   {
+    "version": [6, 8],
+    "date": "July 2 2022",
+    "time": "15:50:00",
+    "notes": [
+      "Updated \"Things I like\" section",
+      "New footer",
+      "Other updates and such",
+      "Specs runs on a JSON file now",
+      "Proper archives page",
+      "Lens is no longer with us. RIP."
+    ]
+  },
+  {
     "version": [6, 7, 2],
     "date": "March 31 2022",
     "time": "15:50:00",

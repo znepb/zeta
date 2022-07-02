@@ -1,0 +1,20 @@
+{
+  "OS": "Windows 11 Home",
+  "CPU": "AMD Ryzen 9 5900X",
+  "CPU Cooler": "Corsair H100i Elite Capellix RGB",
+  "Motherboard": "ASUS ROG STRIX B550-F",
+  "Memory": "32GB Corsair RGB (32GB, 3200Mhz, DDR4)",
+  "Graphics Card": "ASUS Phoenix 1050 Ti",
+  "SSD": "500GB Samsung 860 EVO",
+  "HDD": "2TB Unknown Seagate Drive",
+  "Case": "Corsair 4000X RGB",
+  "Power Supply": "Corsair RMX 850",
+  "Keyboard": "Razer Ornata Chroma",
+  "Mouse": "Some HP mouse, I have no idea",
+  "Microphone": "Blue Yeti 2017 model",
+  "Mouse Pad": "Corsair MM700 RGB",
+  "Headset": "Corsair Vituroso",
+  "Speaker Amplifier": "Fosi Audio BT300",
+  "Speakers": "2x Polk Atrium 4",
+  "Local Server": "Raspberry PI Model 3B+"
+}

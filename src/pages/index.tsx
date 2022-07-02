@@ -15,9 +15,9 @@ import {
   Csharp,
   CssThree,
   Discord,
+  Element,
   Express,
   Html5,
-  Java,
   Javascript,
   Lua,
   Musescore,
@@ -29,6 +29,7 @@ import {
   ReactJs,
   Roblox,
   Sass,
+  Spotify,
   Typescript,
 } from "@icons-pack/react-simple-icons";
 
@@ -37,6 +38,7 @@ import games from "../json/games.json";
 import media from "../json/media.json";
 import links from "../json/links.json";
 import projects from "../json/projects.json";
+import specs from "../json/specs.json";
 
 import Head from "next/head";
 
@@ -93,7 +95,34 @@ export default function Index() {
   return (
     <>
       <Head>
-        <title>{todayIs === "birthday" ? "🎉 " : ""}znepb.me</title>
+        <title>
+          {todayIs === "birthday" ? "🎉 " : ""}znepb.me · Programmer, musician
+          &amp; sysadmin
+        </title>
+
+        <meta
+          name="description"
+          content="Home of Marcus Wenzel, a.k.a znepb, a programmer, musician, roller coaster enthusiast and sysadmin."
+        />
+
+        <meta property="og:url" content="https://znepb.me/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="znepb.me" />
+        <meta
+          property="og:description"
+          content="Home of Marcus Wenzel, a.k.a znepb, a programmer, musician, roller coaster enthusiast and sysadmin."
+        />
+        <meta property="og:image" content="/svg/header-logo-shadow.svg" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="znepb.me" />
+        <meta property="twitter:url" content="https://znepb.me/" />
+        <meta name="twitter:title" content="znepb.me" />
+        <meta
+          name="twitter:description"
+          content="Home of Marcus Wenzel, a.k.a znepb, a programmer, musician, roller coaster enthusiast and sysadmin."
+        />
+        <meta name="twitter:image" content="/svg/header-logo-shadow.svg"></meta>
       </Head>
 
       {confetti && <Confetti confetti={confetti} />}
@@ -151,10 +180,10 @@ export default function Index() {
         </p>
 
         <p>
-          Finally, I am a huge roller coaster nerd. As of December 23nd, 2021, I
-          have ridden 52 roller coasters, a total of 286 times. I&apos;ve been
-          to 5 amusment parks, and my home park is Kings Island. My favorite
-          roller coaster is Steel Vengance at Cedar Point.{" "}
+          Finally, I am a huge roller coaster nerd. As of July 2nd, 2022, I have
+          ridden 52 roller coasters, a total of 326 times. I&apos;ve been to 5
+          amusment parks, and my home park is Kings Island. My favorite roller
+          coaster is Steel Vengance at Cedar Point.{" "}
           <small>(Very original, I know.)</small> If you&apos;d like to see all
           the coasters I&apos;ve ridden and their rankings (and plently of other
           statistics){" "}
@@ -174,24 +203,24 @@ export default function Index() {
           <div>
             <h3>Music</h3>
             <div className={styles.likingsList}>
-              {albums.map((data) => (
-                <Card key={data.id} {...data} />
+              {albums.map((data, i) => (
+                <Card key={i} {...data} />
               ))}
             </div>
           </div>
           <div>
             <h3>Games</h3>
             <div className={styles.likingsList}>
-              {games.map((data) => (
-                <Card key={data.id} {...data} />
+              {games.map((data, i) => (
+                <Card key={i} {...data} />
               ))}
             </div>
           </div>
           <div>
-            <h3>Movies &amp; Shows</h3>
+            <h3>Media</h3>
             <div className={styles.likingsList}>
-              {media.map((data) => (
-                <Card key={data.id} {...data} />
+              {media.map((data, i) => (
+                <Card key={i} {...data} />
               ))}
             </div>
           </div>
@@ -210,7 +239,7 @@ export default function Index() {
                 src={require(`../../public/projects/${project.name
                   .toLowerCase()
                   .replace(" ", "-")}.png`)}
-                placeholder={"blur"}
+                className="shimmer"
               />
               <article>
                 <div>
@@ -290,6 +319,52 @@ export default function Index() {
             }}
           >
             <Discord size="32px" /> <span>znepb#1234</span>
+          </a>
+          <a
+            href="https://www.roblox.com/users/117683546/profile"
+            rel="noreferrer"
+            target="_blank"
+            className="nostyle"
+            style={{
+              background: "#c6231a",
+            }}
+          >
+            <Roblox size="32px" /> <span>znepb</span>
+          </a>
+          <a
+            href="https://open.spotify.com/user/marcopolo0306?si=1b5e2a49ca0042cf"
+            rel="noreferrer"
+            target="_blank"
+            className="nostyle"
+            style={{
+              background: "#1ed760",
+            }}
+          >
+            <Spotify size="32px" /> <span>marcopolo0306</span>
+          </a>
+          <a
+            href="https://matrix.to/#/@znepb:matrix.org"
+            rel="noreferrer"
+            target="_blank"
+            className="nostyle"
+            style={{
+              background: "#0dbd8b",
+            }}
+          >
+            <Element size="32px" /> <span>@znepb:matrix.org</span>
+          </a>
+          <a
+            href="mailto:inbox@znepb.me"
+            rel="noreferrer"
+            target="_blank"
+            className="nostyle"
+            style={{
+              background: "#efefef",
+              color: "#111",
+            }}
+          >
+            <Feather.Mail size="32px" />{" "}
+            <span>inbox@znepb.me (Coming Soon!)</span>
           </a>
         </div>
       </section>
@@ -400,7 +475,12 @@ export default function Index() {
                     </td>
                     <td></td>
                     <td>
-                      <Java color="var(--text)" size={24} />
+                      <img
+                        style={{ filter: "invert(1)" }}
+                        src="/svg/java.svg"
+                        width={24}
+                        height={24}
+                      />
                     </td>
                     <td>
                       <Python color="var(--text)" size={24} />
@@ -445,66 +525,14 @@ export default function Index() {
               <div className="headingDecoration"></div>
               <table className={styles.skills}>
                 <tbody>
-                  <tr>
-                    <th>OS</th>
-                    <td>Windows 10 Home</td>
-                  </tr>
-                  <tr>
-                    <th>CPU</th>
-                    <td>AMD Ryzen 9 5900X</td>
-                  </tr>
-                  <tr>
-                    <th>CPU Cooler</th>
-                    <td>Corsair H100i Elite Capellix RGB</td>
-                  </tr>
-                  <tr>
-                    <th>Motherboard</th>
-                    <td>ROG STRIX B550-F</td>
-                  </tr>
-                  <tr>
-                    <th>RAM</th>
-                    <td>Corsair Vengance RGB 32GB (3200MHz)</td>
-                  </tr>
-                  <tr>
-                    <th>Graphics Card</th>
-                    <td>ASUS Phoenix 1050 Ti</td>
-                  </tr>
-                  <tr>
-                    <th>Storage 1 (SATA SSD)</th>
-                    <td>500GB Samsung 860 EVO</td>
-                  </tr>
-                  <tr>
-                    <th>Storage 2 (HDD)</th>
-                    <td>2TB Seagate drive</td>
-                  </tr>
-                  <tr>
-                    <th>Case</th>
-                    <td>Corsair 4000X RGB</td>
-                  </tr>
-                  <tr>
-                    <th>Power Supply</th>
-                    <td>Corsair RMX 850</td>
-                  </tr>
-                  <tr>
-                    <th>Keyboard</th>
-                    <td>Razer Ornata Chroma</td>
-                  </tr>
-                  <tr>
-                    <th>Mouse</th>
-                    <td>Some HP mouse, I have no idea</td>
-                  </tr>
-                  <tr>
-                    <th>Microphone</th>
-                    <td>Blue Yeti 2017(?) model</td>
-                  </tr>
-                  <tr>
-                    <th>Mouse Pad</th>
-                    <td>Corsair MM700 RGB</td>
-                  </tr>
-                  <tr>
-                    <th>Local Server</th>
-                    <td>Raspberry Pi 3B+</td>
-                  </tr>
+                  {Object.keys(specs).map((key: any, index) => {
+                    return (
+                      <tr key={index}>
+                        <th>{key}</th>
+                        <td>{Object.values(specs)[index]}</td>
+                      </tr>
+                    );
+                  })}
                 </tbody>
               </table>
             </div>

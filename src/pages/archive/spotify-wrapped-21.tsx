@@ -7,6 +7,7 @@ import styles from "../../styles/SpotifyWrapped.module.scss";
 import wrapped from "../../json/SpotifyWrapped2021.json";
 
 import { useState } from "react";
+import Link from "next/link";
 
 export default function SpotifyWrapped21() {
   const [showMore, setShowMore] = useState(false);
@@ -18,7 +19,11 @@ export default function SpotifyWrapped21() {
       </Head>
 
       <section className="header" id="header">
-        <div></div>
+        <div style={{ paddingTop: "2rem" }}>
+          <Link href="/archive">
+            <a>Return to Archives</a>
+          </Link>
+        </div>
         <h2>Spotify Wrapped 2021</h2>
         <div></div>
       </section>
@@ -70,7 +75,7 @@ export default function SpotifyWrapped21() {
               <div className="headingDecoration"></div>
             </div>
             {wrapped.artists.map((obj, idx) => (
-              <Card key={idx} id={idx.toString()} {...obj} />
+              <Card key={idx} {...obj} />
             ))}
           </div>
           <div className={styles.section}>
@@ -79,14 +84,10 @@ export default function SpotifyWrapped21() {
               <div className="headingDecoration"></div>
             </div>
             {showMore
-              ? wrapped.songs.map((obj, idx) => (
-                  <Card key={idx} id={idx.toString()} {...obj} />
-                ))
+              ? wrapped.songs.map((obj, idx) => <Card key={idx} {...obj} />)
               : wrapped.songs
                   .filter((_, idx) => idx < 5)
-                  .map((obj, idx) => (
-                    <Card key={idx} id={idx.toString()} {...obj} />
-                  ))}
+                  .map((obj, idx) => <Card key={idx} {...obj} />)}
             <a
               onClick={() => {
                 setShowMore(!showMore);
@@ -101,7 +102,7 @@ export default function SpotifyWrapped21() {
               <div className="headingDecoration"></div>
             </div>
             {wrapped.soundtrack.map((obj, idx) => (
-              <Card key={idx} id={idx.toString()} {...obj} />
+              <Card key={idx} {...obj} />
             ))}
           </div>
         </div>

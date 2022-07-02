@@ -1,29 +1,66 @@
 [
   {
-    "image": "music/mmmm.jpg",
-    "id": "mmmm",
-    "name": "Marvin's Marvelous Mechanical Museum",
-    "artist": "Tally Hall"
+    "image": "music/148.jpg",
+    "name": "148",
+    "subtext": "C418",
+    "offset": "30%",
+    "links": [
+      {
+        "icon": "spotify",
+        "url": "https://open.spotify.com/album/47rrhji1V9rRBgYIDCWgQJ?si=K4CfQpFPQUamYqkRJpNrDg"
+      },
+      {
+        "icon": "bandcamp",
+        "url": "https://c418.bandcamp.com/album/148"
+      }
+    ]
   },
   {
     "image": "music/dsotm.jpg",
-    "id": "dsotm",
     "name": "Dark Side of the Moon",
-    "artist": "Pink Floyd",
-    "offset": "33%"
+    "subtext": "Pink Floyd",
+    "offset": "33%",
+    "links": [
+      {
+        "icon": "spotify",
+        "url": "https://open.spotify.com/album/4LH4d3cOWNNsVw41Gqt2kv?si=15dc5ce8c721445b"
+      },
+      {
+        "icon": "soundcloud",
+        "url": "https://soundcloud.com/officialpinkfloyd/sets/the-dark-side-of-the-moon-2"
+      }
+    ]
   },
   {
     "image": "music/rush.jpg",
-    "id": "rush",
     "name": "Rush",
     "logo": "music/rushlogo.png",
-    "offset": "40%"
+    "offset": "40%",
+    "links": [
+      {
+        "icon": "spotify",
+        "url": "https://open.spotify.com/artist/2Hkut4rAAyrQxRdof7FVJq?si=6cb190eff8d447ac"
+      },
+      {
+        "icon": "soundcloud",
+        "url": "https://soundcloud.com/rush-official"
+      }
+    ]
   },
   {
     "image": "music/spritphone.jpg",
-    "id": "spritphone",
     "name": "Sprit Phone",
-    "artist": "Lemon Demon",
-    "offset": "40%"
+    "subtext": "Lemon Demon",
+    "offset": "40%",
+    "links": [
+      {
+        "icon": "spotify",
+        "url": "https://open.spotify.com/album/4ocal2JegUDVQdP6KN1roI?si=44b24066cadd4271"
+      },
+      {
+        "icon": "bandcamp",
+        "url": "https://lemondemon.bandcamp.com/album/spirit-phone"
+      }
+    ]
   }
 ]
